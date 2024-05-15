@@ -1,113 +1,84 @@
 import Image from "next/image";
+import Section from "./components/section";
+import Container from "./components/container";
+import Button from "./components/button";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+    <>
+      <Section>
+        <Container>
+          <div className="basis-4/6 xl:basis-3/6">
+            <h2 className="text-4xl">
+              With a vision for innovation and excellence, we create cohesive brand transformations that reflect the values and ethos of your company.
+            </h2>
+          </div>
 
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+          <div className='basis-2/6 xl:basis-3/6 flex items-center'>
+            <Image src="/next.svg" alt="Logo" width={100} height={24} className="bg-white px-2 py-10 w-full"/>
+          </div>
+        </Container>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+        <Button className="m-auto mt-20">Book a call and meet us</Button>
+      </Section>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+      <Section>
+        <Container>
+          <div className="md:flex-col text-center max-w-2xl m-auto">
+            <h3 className="text-4xl mb-10">
+              We are gathering capital to invest in our own inhouse products
+            </h3>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
+            <p className="text-xl">
+            Our team connects skills that are usually compartmentalized: data prototyping, complex information design, processing of large datasets, creative coding, data journalism, distributed system.            
+            </p>
+            <p className="text-xl mt-6">We will share details and blog posts soon enough...</p>
+            
+            <Image src="/next.svg" alt="Logo" width={100} height={24} className="m-auto mt-10 bg-white px-2 py-10"/>
+          </div>
+        </Container>
+      </Section>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+      {/* FOOTER */}
+      <Section className="mb-0">
+        <Container>
+          <div className="flex flex-col flex-1 justify-between">
+            <div>
+              <Image src="/next.svg" alt="Logo" width={200} height={24} className="bg-white px-2 py-10 mb-14"/>
+              <Button>Schedule a Call</Button>
+            </div>
+            <p>DIFFUSION DYNAMICS © 2023-2024</p>
+          </div>
+          <div className="flex flex-col justify-start items-start">
+            <h4 className="text-3xl font-bold mb-8">Our Company</h4>
+            <ul className="flex flex-col">
+              <li className="text-2xl font-light border-b border-gray-400 pb-3 mb-3 pr-5"><a href="#">about us</a></li>
+              <li className="text-2xl font-light border-b border-gray-400 pb-3 mb-3 pr-5"><a href="#">careers</a></li>
+              <li className="text-2xl font-light border-b border-gray-400 pb-3 mb-3 pr-5"><a href="#">blog</a></li>
+              <li className="text-2xl font-light"><a href="#">book us</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 className="text-3xl font-bold mb-8">Contacts</h4>
+            <div className="text-xl mb-8">
+              <h5 className="font-bold">_addr</h5>
+              <p className="font-light"> 
+                Avenida Óscar Monteiro Torres <br />
+                64 - 1º Esquerdo <br />
+                1000 - 220 Lisboa
+              </p>
+            </div>
+            <div className="text-xl  mb-8">
+              <h5 className="font-bold">_email</h5>
+              <p className="font-light">contact@diffusiondynamics.ai</p>
+            </div>
+            <div className="text-xl">
+              <h5 className="font-bold">_telegram</h5>
+              <p className="font-light">@diffusion</p>
+            </div>
+          </div>
+        </Container>
+      </Section>
+    </>
   );
 }
