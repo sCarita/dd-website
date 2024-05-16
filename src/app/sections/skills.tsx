@@ -273,11 +273,11 @@ const Tab4 = () => {
 }
 
 const tabsMenu = [
-  {label: 'data collection', icon: "/next.svg"},
-  {label: 'prototyping', icon: "/next.svg"},
-  {label: 'crypto', icon: "/next.svg"},
-  {label: 'data visualization', icon: "/next.svg"},
-  {label: 'ai voice', icon: "/next.svg"},
+  {label: 'data collection', icon: "/dd-gifs/gif_0_white.gif"},
+  {label: 'prototyping', icon: "/dd-gifs/gif_5_white.gif"},
+  {label: 'crypto', icon: "/dd-gifs/gif_2_white.gif"},
+  {label: 'data visualization', icon: "/dd-gifs/gif_3_white.gif"},
+  {label: 'ai voice', icon: "/dd-gifs/gif_4_white.gif"},
 ]
 
 export default function Skills() {
@@ -301,21 +301,21 @@ export default function Skills() {
                   key={idx} 
                   className={clsx(
                     "flex text-2xl font-light border-b border-gray-400 last:border-0 pb-3 mb-3 pr-5 h-12 cursor-pointer transition-all", 
-                    activeTab === idx && 'h-20'
+                    activeTab === idx && 'h-24'
                   )}
                   onClick={()=> setActiveTab(idx)}
                 >
                   {tab.label}
                   <div className={clsx(
                         "flex flex-1 justify-center items-center overflow-hidden transition-all",
-                        activeTab === idx ? 'h-20' : 'h-0'
+                        activeTab === idx ? 'h-24' : 'h-0'
                   )}>
-                    <Image 
+                    <Image
+                      unoptimized
                       src={tab.icon}
                       alt={tab.label}
                       width={50}
                       height={24}
-                      className="bg-white px-2 py-4"
                     />
                     </div>
                 </li>
