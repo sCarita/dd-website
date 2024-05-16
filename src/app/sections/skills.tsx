@@ -78,7 +78,7 @@ const Tab1 = ({id, isInView}: {id: string, isInView: () => void}) => {
     },
   });
 
-  return <div ref={ref} id={id} className="font-favorit">
+  return <div ref={ref} id={id} className="font-favorit mt-20">
     <h3 className="text-4xl font-recoleta font-bold mb-6">prototyping2</h3>
     <p className="text-xl font-light">
       Our team connects skills that are usually compartmentalized: <span className="font-recoleta font-bold">data prototyping</span>, 
@@ -138,7 +138,7 @@ const Tab2 = ({id, isInView}: {id: string, isInView: () => void}) => {
     },
   });
 
-  return <div ref={ref} id={id} className="font-favorit">
+  return <div ref={ref} id={id} className="font-favorit mt-20">
     <h3 className="text-4xl font-recoleta font-bold mb-6">prototyping3</h3>
     <p className="text-xl font-light">
       Our team connects skills that are usually compartmentalized: <span className="font-recoleta font-bold">data prototyping</span>, 
@@ -198,7 +198,7 @@ const Tab3 = ({id, isInView}: {id: string, isInView: () => void}) => {
     },
   });
 
-  return <div ref={ref} id={id} className="font-favorit">
+  return <div ref={ref} id={id} className="font-favorit mt-20">
     <h3 className="text-4xl font-recoleta font-bold mb-6">prototyping4</h3>
     <p className="text-xl font-light">
       Our team connects skills that are usually compartmentalized: <span className="font-recoleta font-bold">data prototyping</span>, 
@@ -258,7 +258,7 @@ const Tab4 = ({id, isInView}: {id: string, isInView: () => void}) => {
     },
   });
 
-  return <div ref={ref} id={id} className="font-favorit">
+  return <div ref={ref} id={id} className="font-favorit mt-20">
     <h3 className="text-4xl font-recoleta font-bold mb-6">prototyping5</h3>
     <p className="text-xl font-light">
       Our team connects skills that are usually compartmentalized: <span className="font-recoleta font-bold">data prototyping</span>, 
