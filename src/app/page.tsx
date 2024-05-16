@@ -51,12 +51,9 @@ export default function Home() {
       {/* FOOTER */}
       <Section className="mb-0">
         <Container>
-          <div className="flex flex-col flex-1 justify-between">
-            <div>
+          <div className="flex flex-col flex-1 items-start">
               <Image src="/dd_logo.svg" alt="Logo" width={180} height={80} className="mb-14"/>
               <Button>Schedule a Call</Button>
-            </div>
-            <p className="font-favorit">DIFFUSION DYNAMICS © 2023-2024</p>
           </div>
           <div className="flex flex-col justify-start items-start">
             <h4 className="text-3xl font-bold mb-8 font-recoleta">Our Company</h4>
@@ -86,6 +83,9 @@ export default function Home() {
               <p className="font-basis font-light">@diffusion</p>
             </div>
           </div>
+        </Container>
+        <Container>
+          <p className="font-favorit mt-10 sm:mt-0">DIFFUSION DYNAMICS © 2023-2024</p>
         </Container>
       </Section>
     </>
