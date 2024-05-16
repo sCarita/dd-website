@@ -5,12 +5,12 @@ import "./globals.css";
 const basis = localFont({
   src: [
     {
-      path: 'fonts/BasisGrotesqueArabicPro-Bold.ttf',
+      path: 'fonts/basisgrotesquearabicpro-bold.ttf',
       weight: '600',
       style: 'normal',
     },
     {
-      path: 'fonts/BasisGrotesqueArabicPro-Light.ttf',
+      path: 'fonts/basisgrotesquearabicpro-light.ttf',
       weight: '300',
       style: 'normal',
     },
@@ -21,12 +21,12 @@ const basis = localFont({
 const favorit = localFont({
   src: [
     {
-      path: 'fonts/FavoritBookC.ttf',
+      path: 'fonts/favoritbookc.ttf',
       weight: '400',
       style: 'normal',
     },
     {
-      path: 'fonts/FavoritLightC.ttf',
+      path: 'fonts/favoritlightc.ttf',
       weight: '300',
       style: 'normal',
     },
@@ -37,12 +37,12 @@ const favorit = localFont({
 const recoleta = localFont({
   src: [
     {
-      path: 'fonts/Recoleta-regular.ttf',
+      path: 'fonts/recoleta-regular.ttf',
       weight: '400',
       style: 'normal',
     },
     {
-      path: 'fonts/Recoleta-Medium.ttf',
+      path: 'fonts/recoleta-medium.ttf',
       weight: '500',
       style: 'normal',
     },
