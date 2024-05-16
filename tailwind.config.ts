@@ -8,6 +8,12 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        basis: ['var(--font-basis)'],
+        favorit: ['var(--font-favorit)'],
+        recoleta: ['var(--font-recoleta)'],
+        pixel: ['var(--font-pixel)'],
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

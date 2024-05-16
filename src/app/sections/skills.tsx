@@ -12,12 +12,12 @@ import GptIcon from "../components/icons/gptIcon";
 import TypescriptIcon from "../components/icons/typescriptIcon";
 
 const Tab0 = () => {
-  return <>
-    <h3 className="text-4xl font-bold mb-6">prototyping</h3>
+  return <div className="font-favorit">
+    <h3 className="text-4xl font-recoleta font-bold mb-6">prototyping</h3>
     <p className="text-xl font-light">
-      Our team connects skills that are usually compartmentalized: <strong>data prototyping</strong>, 
+      Our team connects skills that are usually compartmentalized: <span className="font-recoleta font-bold">data prototyping</span>, 
       complex information design, processing of large datasets, creative coding, data journalism, 
-      <strong>distributed system</strong>.
+      <span className="font-recoleta font-bold">distributed system</span>.
     </p>
     <div className="flex flex-col sm:flex-row justify-between gap-6 mt-14">
       <div className="basis-6/12">
@@ -60,16 +60,16 @@ const Tab0 = () => {
         </div>
       </div>
     </div>
-  </>
+  </div>
 }
 
 const Tab1 = () => {
-  return <>
-    <h3 className="text-4xl font-bold mb-6">prototyping2</h3>
+  return <div className="font-favorit">
+    <h3 className="text-4xl font-recoleta font-bold mb-6">prototyping2</h3>
     <p className="text-xl font-light">
-      Our team connects skills that are usually compartmentalized: <strong>data prototyping</strong>, 
+      Our team connects skills that are usually compartmentalized: <span className="font-recoleta font-bold">data prototyping</span>, 
       complex information design, processing of large datasets, creative coding, data journalism, 
-      <strong>distributed system</strong>.
+      <span className="font-recoleta font-bold">distributed system</span>.
     </p>
     <div className="flex flex-col sm:flex-row justify-between gap-6 mt-14">
       <div className="basis-6/12">
@@ -112,16 +112,16 @@ const Tab1 = () => {
         </div>
       </div>
     </div>
-  </>
+  </div>
 }
 
 const Tab2 = () => {
-  return <>
-    <h3 className="text-4xl font-bold mb-6">prototyping3</h3>
+  return <div className="font-favorit">
+    <h3 className="text-4xl font-recoleta font-bold mb-6">prototyping3</h3>
     <p className="text-xl font-light">
-      Our team connects skills that are usually compartmentalized: <strong>data prototyping</strong>, 
+      Our team connects skills that are usually compartmentalized: <span className="font-recoleta font-bold">data prototyping</span>, 
       complex information design, processing of large datasets, creative coding, data journalism, 
-      <strong>distributed system</strong>.
+      <span className="font-recoleta font-bold">distributed system</span>.
     </p>
     <div className="flex flex-col sm:flex-row justify-between gap-6 mt-14">
       <div className="basis-6/12">
@@ -164,16 +164,16 @@ const Tab2 = () => {
         </div>
       </div>
     </div>
-  </>
+  </div>
 }
 
 const Tab3 = () => {
-  return <>
-    <h3 className="text-4xl font-bold mb-6">prototyping4</h3>
+  return <div className="font-favorit">
+    <h3 className="text-4xl font-recoleta font-bold mb-6">prototyping4</h3>
     <p className="text-xl font-light">
-      Our team connects skills that are usually compartmentalized: <strong>data prototyping</strong>, 
+      Our team connects skills that are usually compartmentalized: <span className="font-recoleta font-bold">data prototyping</span>, 
       complex information design, processing of large datasets, creative coding, data journalism, 
-      <strong>distributed system</strong>.
+      <span className="font-recoleta font-bold">distributed system</span>.
     </p>
     <div className="flex flex-col sm:flex-row justify-between gap-6 mt-14">
       <div className="basis-6/12">
@@ -216,16 +216,16 @@ const Tab3 = () => {
         </div>
       </div>
     </div>
-  </>
+  </div>
 }
 
 const Tab4 = () => {
-  return <>
-    <h3 className="text-4xl font-bold mb-6">prototyping5</h3>
+  return <div className="font-favorit">
+    <h3 className="text-4xl font-recoleta font-bold mb-6">prototyping5</h3>
     <p className="text-xl font-light">
-      Our team connects skills that are usually compartmentalized: <strong>data prototyping</strong>, 
+      Our team connects skills that are usually compartmentalized: <span className="font-recoleta font-bold">data prototyping</span>, 
       complex information design, processing of large datasets, creative coding, data journalism, 
-      <strong>distributed system</strong>.
+      <span className="font-recoleta font-bold">distributed system</span>.
     </p>
     <div className="flex flex-col sm:flex-row justify-between gap-6 mt-14">
       <div className="basis-6/12">
@@ -269,7 +269,7 @@ const Tab4 = () => {
         </div>
       </div>
     </div>
-  </>
+  </div>
 }
 
 const tabsMenu = [
@@ -289,19 +289,19 @@ export default function Skills() {
           <div className="basis-4/12">
           <h3 className="text-4xl font-bold mb-6 hidden sm:block sm:invisible">invisible</h3>
           <StickyBox offsetTop={15}>
-            <p className="text-xl font-light">
-              Our team connects skills that are usually compartmentalized: <strong>data prototyping</strong>, 
+            <p className="text-xl font-favorit font-light">
+              Our team connects skills that are usually compartmentalized: <span className="font-recoleta font-bold">data prototyping</span>, 
               complex information design, processing of large datasets, creative coding, data journalism, 
-              <strong>distributed system</strong>.
+              <span className="font-recoleta font-bold">distributed system</span>.
             </p>
-            <p className="text-xl font-light mt-6">Our team connects skills that are usually compartmentalized:</p>
-            <ul className="flex flex-col mt-20">
+            <p className="text-xl font-favorit font-light mt-6">Our team connects skills that are usually compartmentalized:</p>
+            <ul className="flex flex-col mt-20 font-recoleta">
               {tabsMenu.map( (tab, idx) => (
                 <li 
                   key={idx} 
                   className={clsx(
                     "flex text-2xl font-light border-b border-gray-400 last:border-0 pb-3 mb-3 pr-5 h-12 cursor-pointer transition-all", 
-                    activeTab === idx && 'h-24'
+                    activeTab === idx && 'h-24 font-bold'
                   )}
                   onClick={()=> setActiveTab(idx)}
                 >

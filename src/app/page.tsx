@@ -13,7 +13,7 @@ export default function Home() {
       <Section>
         <Container>
           <div className="basis-4/6 xl:basis-3/6">
-            <h2 className="text-4xl">
+            <h2 className="text-4xl font-favorit">
               With a vision for innovation and excellence, 
               we create cohesive brand transformations that reflect the values and ethos of your company.
             </h2>
@@ -31,7 +31,7 @@ export default function Home() {
 
       <Section>
         <Container>
-          <div className="md:flex-col text-center max-w-2xl m-auto">
+          <div className="md:flex-col text-center max-w-2xl m-auto font-favorit">
             <h3 className="text-4xl mb-10">
               We are gathering capital to invest in our own inhouse products
             </h3>
@@ -41,7 +41,7 @@ export default function Home() {
               complex information design, processing of large datasets, creative coding, data journalism, 
               distributed system.
             </p>
-            <p className="text-xl mt-6">We will share details and blog posts soon enough...</p>
+            <p className="text-xl font-light mt-6">We will share details and blog posts soon enough...</p>
             
             <Image src="/dd_eye.png" alt="Diffusion Dynamics eye" width={80} height={80} className="m-auto mt-10"/>
           </div>
@@ -56,11 +56,11 @@ export default function Home() {
               <Image src="/dd_logo.svg" alt="Logo" width={180} height={80} className="mb-14"/>
               <Button>Schedule a Call</Button>
             </div>
-            <p>DIFFUSION DYNAMICS © 2023-2024</p>
+            <p className="font-favorit">DIFFUSION DYNAMICS © 2023-2024</p>
           </div>
           <div className="flex flex-col justify-start items-start">
-            <h4 className="text-3xl font-bold mb-8">Our Company</h4>
-            <ul className="flex flex-col">
+            <h4 className="text-3xl font-bold mb-8 font-recoleta">Our Company</h4>
+            <ul className="flex flex-col font-basis">
               <li className="text-2xl font-light border-b border-gray-400 pb-3 mb-3 pr-5"><a href="#">about us</a></li>
               <li className="text-2xl font-light border-b border-gray-400 pb-3 mb-3 pr-5"><a href="#">careers</a></li>
               <li className="text-2xl font-light border-b border-gray-400 pb-3 mb-3 pr-5"><a href="#">blog</a></li>
@@ -68,22 +68,22 @@ export default function Home() {
             </ul>
           </div>
           <div>
-            <h4 className="text-3xl font-bold mb-8">Contacts</h4>
+            <h4 className="text-3xl font-bold mb-8 font-recoleta">Contacts</h4>
             <div className="text-xl mb-8">
-              <h5 className="font-bold">_addr</h5>
-              <p className="font-light"> 
+              <h5 className="font-recoleta font-bold">_addr</h5>
+              <p className="font-basis font-light"> 
                 Avenida Óscar Monteiro Torres <br />
                 64 - 1º Esquerdo <br />
                 1000 - 220 Lisboa
               </p>
             </div>
             <div className="text-xl  mb-8">
-              <h5 className="font-bold">_email</h5>
-              <p className="font-light">contact@diffusiondynamics.ai</p>
+              <h5 className="font-recoleta font-bold">_email</h5>
+              <p className="font-basis font-light">contact@diffusiondynamics.ai</p>
             </div>
             <div className="text-xl">
-              <h5 className="font-bold">_telegram</h5>
-              <p className="font-light">@diffusion</p>
+              <h5 className="font-recoleta font-bold">_telegram</h5>
+              <p className="font-basis font-light">@diffusion</p>
             </div>
           </div>
         </Container>

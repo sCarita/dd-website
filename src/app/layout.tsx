@@ -1,8 +1,57 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import localFont from 'next/font/local'
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const basis = localFont({
+  src: [
+    {
+      path: '/fonts/BasisGrotesqueArabicPro-Bold.ttf',
+      weight: '600',
+      style: 'normal',
+    },
+    {
+      path: '/fonts/BasisGrotesqueArabicPro-Light.ttf',
+      weight: '300',
+      style: 'normal',
+    },
+  ],
+  variable: '--font-basis',
+})
+
+const favorit = localFont({
+  src: [
+    {
+      path: '/fonts/FavoritBookC.ttf',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: '/fonts/FavoritLightC.ttf',
+      weight: '300',
+      style: 'normal',
+    },
+  ],
+  variable: '--font-favorit',
+})
+
+const recoleta = localFont({
+  src: [
+    {
+      path: '/fonts/Recoleta-regular.ttf',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: '/fonts/Recoleta-Medium.ttf',
+      weight: '500',
+      style: 'normal',
+    },
+  ],
+  variable: '--font-recoleta',
+})
+
+const pixel = localFont({ src: '/fonts/pixelmix_bold.ttf', variable: '--font-pixel', })
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +65,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${basis.variable} ${favorit.variable} ${recoleta.variable} ${pixel.variable}`}>{children}</body>
     </html>
   );
 }
