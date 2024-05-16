@@ -7,9 +7,6 @@ import Button from "../components/button";
 import Image from "next/image";
 import StickyBox from "react-sticky-box";
 import clsx from "clsx";
-import ReactIcon from "../components/icons/reactIcon";
-import GptIcon from "../components/icons/gptIcon";
-import TypescriptIcon from "../components/icons/typescriptIcon";
 
 const Tab0 = () => {
   return <div className="font-favorit">
@@ -53,9 +50,9 @@ const Tab0 = () => {
             <p className="text-lg mt-1">Conveying the value of Swisscom’s mobility data to better understand urban mobility.</p>
           </div>
           <div className="flex gap-2">
-            <ReactIcon />
-            <GptIcon />
-            <TypescriptIcon/>
+            <Image src="/reactIcon.svg" alt="react" width={20} height={20}/>
+            <Image src="/gptIcon.svg" alt="gtp" width={20} height={20}/>
+            <Image src="/typescriptIcon.svg" alt="typescript" width={20} height={20}/>
           </div>
         </div>
       </div>
@@ -105,9 +102,9 @@ const Tab1 = () => {
             <p className="text-lg mt-1">Conveying the value of Swisscom’s mobility data to better understand urban mobility.</p>
           </div>
           <div className="flex gap-2">
-            <ReactIcon />
-            <GptIcon />
-            <TypescriptIcon/>
+            <Image src="/reactIcon.svg" alt="react" width={20} height={20}/>
+            <Image src="/gptIcon.svg" alt="gtp" width={20} height={20}/>
+            <Image src="/typescriptIcon.svg" alt="typescript" width={20} height={20}/>
           </div>
         </div>
       </div>
@@ -157,9 +154,9 @@ const Tab2 = () => {
             <p className="text-lg mt-1">Conveying the value of Swisscom’s mobility data to better understand urban mobility.</p>
           </div>
           <div className="flex gap-2">
-            <ReactIcon />
-            <GptIcon />
-            <TypescriptIcon/>
+            <Image src="/reactIcon.svg" alt="react" width={20} height={20}/>
+            <Image src="/gptIcon.svg" alt="gtp" width={20} height={20}/>
+            <Image src="/typescriptIcon.svg" alt="typescript" width={20} height={20}/>
           </div>
         </div>
       </div>
@@ -209,9 +206,9 @@ const Tab3 = () => {
             <p className="text-lg mt-1">Conveying the value of Swisscom’s mobility data to better understand urban mobility.</p>
           </div>
           <div className="flex gap-2">
-            <ReactIcon />
-            <GptIcon />
-            <TypescriptIcon/>
+            <Image src="/reactIcon.svg" alt="react" width={20} height={20}/>
+            <Image src="/gptIcon.svg" alt="gtp" width={20} height={20}/>
+            <Image src="/typescriptIcon.svg" alt="typescript" width={20} height={20}/>
           </div>
         </div>
       </div>
@@ -261,9 +258,9 @@ const Tab4 = () => {
             <p className="text-lg mt-1">Conveying the value of Swisscom’s mobility data to better understand urban mobility.</p>
           </div>
           <div className="flex gap-2">
-            <ReactIcon />
-            <GptIcon />
-            <TypescriptIcon/>
+            <Image src="/reactIcon.svg" alt="react" width={20} height={20}/>
+            <Image src="/gptIcon.svg" alt="gtp" width={20} height={20}/>
+            <Image src="/typescriptIcon.svg" alt="typescript" width={20} height={20}/>
           </div>
 
         </div>
