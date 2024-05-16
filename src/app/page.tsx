@@ -43,7 +43,7 @@ export default function Home() {
             </p>
             <p className="text-xl mt-6">We will share details and blog posts soon enough...</p>
             
-            <Image src="/next.svg" alt="Logo" width={100} height={24} className="m-auto mt-10 bg-white px-2 py-10"/>
+            <Image src="/dd_eye.png" alt="Diffusion Dynamics eye" width={80} height={80} className="m-auto mt-10"/>
           </div>
         </Container>
       </Section>
@@ -53,7 +53,7 @@ export default function Home() {
         <Container>
           <div className="flex flex-col flex-1 justify-between">
             <div>
-              <Image src="/next.svg" alt="Logo" width={200} height={24} className="bg-white px-2 py-10 mb-14"/>
+              <Image src="/dd_logo.svg" alt="Logo" width={180} height={80} className="mb-14"/>
               <Button>Schedule a Call</Button>
             </div>
             <p>DIFFUSION DYNAMICS © 2023-2024</p>
