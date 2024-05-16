@@ -52,16 +52,16 @@ const Tab0 = ({id, isInView}: {id: string, isInView: () => void}) => {
     <div className="mt-14">
       <h4 className="mb-4">RECENT PROJECT</h4>
       <div className="flex gap-2 font-light">
-        <Image src="/next.svg" alt="Logo" width={200} height={24} className="m-auto bg-white px-2 py-12"/>
-        <div className="flex flex-col flex-1 justify-between p-2 bg-zinc-900">
+        <Image src="/next.svg" alt="Logo" width={200} height={24} className="m-auto bg-white px-2 py-12 invert dark:invert-0"/>
+        <div className="flex flex-col flex-1 justify-between p-2 bg-zinc-200 dark:bg-zinc-900">
           <div>
             <p className="text-sm">PROTOTYPE / SWISSCOM MOBILITY INSIGTHS</p>
             <p className="text-lg mt-1">Conveying the value of Swisscom’s mobility data to better understand urban mobility.</p>
           </div>
           <div className="flex gap-2">
-            <Image src="/reactIcon.svg" alt="react" width={20} height={20}/>
-            <Image src="/gptIcon.svg" alt="gtp" width={20} height={20}/>
-            <Image src="/typescriptIcon.svg" alt="typescript" width={20} height={20}/>
+            <Image src="/reactIcon.svg" alt="react" width={20} height={20} className="invert dark:invert-0"/>
+            <Image src="/gptIcon.svg" alt="gtp" width={20} height={20} className="invert dark:invert-0"/>
+            <Image src="/typescriptIcon.svg" alt="typescript" width={20} height={20} className="invert dark:invert-0"/>
           </div>
         </div>
       </div>
@@ -112,16 +112,16 @@ const Tab1 = ({id, isInView}: {id: string, isInView: () => void}) => {
     <div className="mt-14">
       <h4 className="mb-4">RECENT PROJECT</h4>
       <div className="flex gap-2 font-light">
-        <Image src="/next.svg" alt="Logo" width={200} height={24} className="m-auto bg-white px-2 py-12"/>
-        <div className="flex flex-col flex-1 justify-between p-2 bg-zinc-900">
+        <Image src="/next.svg" alt="Logo" width={200} height={24} className="m-auto bg-white px-2 py-12 invert dark:invert-0"/>
+        <div className="flex flex-col flex-1 justify-between p-2 bg-zinc-200 dark:bg-zinc-900">
           <div>
             <p className="text-sm">PROTOTYPE / SWISSCOM MOBILITY INSIGTHS</p>
             <p className="text-lg mt-1">Conveying the value of Swisscom’s mobility data to better understand urban mobility.</p>
           </div>
           <div className="flex gap-2">
-            <Image src="/reactIcon.svg" alt="react" width={20} height={20}/>
-            <Image src="/gptIcon.svg" alt="gtp" width={20} height={20}/>
-            <Image src="/typescriptIcon.svg" alt="typescript" width={20} height={20}/>
+            <Image src="/reactIcon.svg" alt="react" width={20} height={20} className="invert dark:invert-0"/>
+            <Image src="/gptIcon.svg" alt="gtp" width={20} height={20} className="invert dark:invert-0"/>
+            <Image src="/typescriptIcon.svg" alt="typescript" width={20} height={20} className="invert dark:invert-0"/>
           </div>
         </div>
       </div>
@@ -172,16 +172,16 @@ const Tab2 = ({id, isInView}: {id: string, isInView: () => void}) => {
     <div className="mt-14">
       <h4 className="mb-4">RECENT PROJECT</h4>
       <div className="flex gap-2 font-light">
-        <Image src="/next.svg" alt="Logo" width={200} height={24} className="m-auto bg-white px-2 py-12"/>
-        <div className="flex flex-col flex-1 justify-between p-2 bg-zinc-900">
+        <Image src="/next.svg" alt="Logo" width={200} height={24} className="m-auto bg-white px-2 py-12 invert dark:invert-0"/>
+        <div className="flex flex-col flex-1 justify-between p-2 bg-zinc-200 dark:bg-zinc-900">
           <div>
             <p className="text-sm">PROTOTYPE / SWISSCOM MOBILITY INSIGTHS</p>
             <p className="text-lg mt-1">Conveying the value of Swisscom’s mobility data to better understand urban mobility.</p>
           </div>
           <div className="flex gap-2">
-            <Image src="/reactIcon.svg" alt="react" width={20} height={20}/>
-            <Image src="/gptIcon.svg" alt="gtp" width={20} height={20}/>
-            <Image src="/typescriptIcon.svg" alt="typescript" width={20} height={20}/>
+            <Image src="/reactIcon.svg" alt="react" width={20} height={20} className="invert dark:invert-0"/>
+            <Image src="/gptIcon.svg" alt="gtp" width={20} height={20} className="invert dark:invert-0"/>
+            <Image src="/typescriptIcon.svg" alt="typescript" width={20} height={20} className="invert dark:invert-0"/>
           </div>
         </div>
       </div>
@@ -232,16 +232,16 @@ const Tab3 = ({id, isInView}: {id: string, isInView: () => void}) => {
     <div className="mt-14">
       <h4 className="mb-4">RECENT PROJECT</h4>
       <div className="flex gap-2 font-light">
-        <Image src="/next.svg" alt="Logo" width={200} height={24} className="m-auto bg-white px-2 py-12"/>
-        <div className="flex flex-col flex-1 justify-between p-2 bg-zinc-900">
+        <Image src="/next.svg" alt="Logo" width={200} height={24} className="m-auto bg-white px-2 py-12 invert dark:invert-0"/>
+        <div className="flex flex-col flex-1 justify-between p-2 bg-zinc-200 dark:bg-zinc-900">
           <div>
             <p className="text-sm">PROTOTYPE / SWISSCOM MOBILITY INSIGTHS</p>
             <p className="text-lg mt-1">Conveying the value of Swisscom’s mobility data to better understand urban mobility.</p>
           </div>
           <div className="flex gap-2">
-            <Image src="/reactIcon.svg" alt="react" width={20} height={20}/>
-            <Image src="/gptIcon.svg" alt="gtp" width={20} height={20}/>
-            <Image src="/typescriptIcon.svg" alt="typescript" width={20} height={20}/>
+            <Image src="/reactIcon.svg" alt="react" width={20} height={20} className="invert dark:invert-0"/>
+            <Image src="/gptIcon.svg" alt="gtp" width={20} height={20} className="invert dark:invert-0"/>
+            <Image src="/typescriptIcon.svg" alt="typescript" width={20} height={20} className="invert dark:invert-0"/>
           </div>
         </div>
       </div>
@@ -292,16 +292,16 @@ const Tab4 = ({id, isInView}: {id: string, isInView: () => void}) => {
     <div className="mt-14">
       <h4 className="mb-4">RECENT PROJECT</h4>
       <div className="flex gap-2 font-light">
-        <Image src="/next.svg" alt="Logo" width={200} height={24} className="m-auto bg-white px-2 py-12"/>
-        <div className="flex flex-col flex-1 justify-between p-2 bg-zinc-900">
+        <Image src="/next.svg" alt="Logo" width={200} height={24} className="m-auto bg-white px-2 py-12 invert dark:invert-0"/>
+        <div className="flex flex-col flex-1 justify-between p-2 bg-zinc-200 dark:bg-zinc-900">
           <div>
             <p className="text-sm">PROTOTYPE / SWISSCOM MOBILITY INSIGTHS</p>
             <p className="text-lg mt-1">Conveying the value of Swisscom’s mobility data to better understand urban mobility.</p>
           </div>
           <div className="flex gap-2">
-            <Image src="/reactIcon.svg" alt="react" width={20} height={20}/>
-            <Image src="/gptIcon.svg" alt="gtp" width={20} height={20}/>
-            <Image src="/typescriptIcon.svg" alt="typescript" width={20} height={20}/>
+            <Image src="/reactIcon.svg" alt="react" width={20} height={20} className="invert dark:invert-0"/>
+            <Image src="/gptIcon.svg" alt="gtp" width={20} height={20} className="invert dark:invert-0"/>
+            <Image src="/typescriptIcon.svg" alt="typescript" width={20} height={20} className="invert dark:invert-0"/>
           </div>
 
         </div>
@@ -311,11 +311,11 @@ const Tab4 = ({id, isInView}: {id: string, isInView: () => void}) => {
 }
 
 const tabsMenu = [
-  {label: 'data collection', icon: "/dd-gifs/gif_0_white.gif"},
-  {label: 'prototyping', icon: "/dd-gifs/gif_5_white.gif"},
-  {label: 'crypto', icon: "/dd-gifs/gif_2_white.gif"},
-  {label: 'data visualization', icon: "/dd-gifs/gif_3_white.gif"},
-  {label: 'ai voice', icon: "/dd-gifs/gif_4_white.gif"},
+  {label: 'data collection', icon: "/dd-gifs/gif_0_white.gif", iconDark: "/dd-gifs/gif_0_black.gif"},
+  {label: 'prototyping', icon: "/dd-gifs/gif_5_white.gif", iconDark: "/dd-gifs/gif_5_black.gif"},
+  {label: 'crypto', icon: "/dd-gifs/gif_2_white.gif", iconDark: "/dd-gifs/gif_2_black.gif"},
+  {label: 'data visualization', icon: "/dd-gifs/gif_3_white.gif", iconDark: "/dd-gifs/gif_3_black.gif"},
+  {label: 'ai voice', icon: "/dd-gifs/gif_4_white.gif", iconDark: "/dd-gifs/gif_4_black.gif"},
 ]
 
 export default function Skills() {
@@ -327,6 +327,7 @@ export default function Skills() {
 
   useEffect(()=> {
     return () => clearTimeout(tabTimeout)
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   return (
@@ -364,6 +365,7 @@ export default function Skills() {
                         alt={tab.label}
                         width={50}
                         height={24}
+                        className="invert dark:invert-0"
                       />
                     </div>
                   </a>

@@ -6,10 +6,17 @@ import Container from "./components/container";
 import Button from "./components/button";
 import StickyBox from "react-sticky-box";
 import Skills from "./sections/skills";
+import ThemeToggle from "./components/themeToggle";
 
 export default function Home() {
   return (
     <>
+      <section className="fixed left-0 top-0 w-full py-4 z-10">
+        <Container className="justify-end">
+          <ThemeToggle />
+        </Container>
+      </section>
+
       <Section>
         <Container>
           <div className="basis-4/6 xl:basis-3/6">
@@ -20,7 +27,7 @@ export default function Home() {
           </div>
 
           <div className='basis-2/6 xl:basis-3/6 flex items-center'>
-            <Image src="/next.svg" alt="Logo" width={100} height={24} className="bg-white px-2 py-10 w-full"/>
+            <Image src="/next.svg" alt="Logo" width={100} height={24} className="bg-white px-2 py-10 w-full invert dark:invert-0"/>
           </div>
         </Container>
 
@@ -52,7 +59,7 @@ export default function Home() {
       <Section className="mb-0">
         <Container>
           <div className="flex flex-col flex-1 items-start">
-              <Image src="/dd_logo.svg" alt="Logo" width={180} height={80} className="mb-14"/>
+              <Image src="/dd_logo.svg" alt="Logo" width={180} height={80} className="mb-14 invert dark:invert-0"/>
               <Button>Schedule a Call</Button>
           </div>
           <div className="flex flex-col justify-start items-start">

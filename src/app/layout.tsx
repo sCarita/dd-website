@@ -65,7 +65,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${basis.variable} ${favorit.variable} ${recoleta.variable} ${pixel.variable}`}>{children}</body>
+      <body className={`${basis.variable} ${favorit.variable} ${recoleta.variable} ${pixel.variable} dark:bg-black dark:text-white`}>
+        {children}
+      </body>
     </html>
   );
 }
