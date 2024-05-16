@@ -68,11 +68,7 @@ export default function Home() {
             <h4 className="text-3xl font-bold mb-8 font-recoleta">Contacts</h4>
             <div className="text-xl mb-8">
               <h5 className="font-recoleta font-bold">_addr</h5>
-              <p className="font-basis font-light"> 
-                Avenida Óscar Monteiro Torres <br />
-                64 - 1º Esquerdo <br />
-                1000 - 220 Lisboa
-              </p>
+              <Image src="/address.svg" alt="address" width={100} height={100} className="mb-14 w-auto h-auto"/>
             </div>
             <div className="text-xl  mb-8">
               <h5 className="font-recoleta font-bold">_email</h5>
