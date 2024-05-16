@@ -343,7 +343,7 @@ export default function Skills() {
                 >
                   {tab.label}
                   <div className={clsx(
-                        "flex flex-1 justify-center items-center overflow-hidden transition-all",
+                        "flex flex-1 justify-end items-center overflow-hidden transition-all",
                         activeTab === idx ? 'h-24' : 'h-0'
                   )}>
                     <Image
