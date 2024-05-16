@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Section from "../components/section";
 import Container from "../components/container";
 import Button from "../components/button";
@@ -9,7 +9,7 @@ import StickyBox from "react-sticky-box";
 import clsx from "clsx";
 import { useInView } from "react-intersection-observer";
 
-const Tab0 = ({isInView}: {isInView: () => void}) => {
+const Tab0 = ({id, isInView}: {id: string, isInView: () => void}) => {
   const { ref } = useInView({
     threshold: 0.5,
     fallbackInView: false,
@@ -18,7 +18,7 @@ const Tab0 = ({isInView}: {isInView: () => void}) => {
     },
   });
 
-  return <div ref={ref} className="font-favorit">
+  return <div ref={ref} id={id} className="font-favorit">
     <h3 className="text-4xl font-recoleta font-bold mb-6">prototyping</h3>
     <p className="text-xl font-light">
       Our team connects skills that are usually compartmentalized: <span className="font-recoleta font-bold">data prototyping</span>, 
@@ -69,7 +69,7 @@ const Tab0 = ({isInView}: {isInView: () => void}) => {
   </div>
 }
 
-const Tab1 = ({isInView}: {isInView: () => void}) => {
+const Tab1 = ({id, isInView}: {id: string, isInView: () => void}) => {
   const { ref } = useInView({
     threshold: 0.5,
     fallbackInView: false,
@@ -78,7 +78,7 @@ const Tab1 = ({isInView}: {isInView: () => void}) => {
     },
   });
 
-  return <div ref={ref} className="font-favorit">
+  return <div ref={ref} id={id} className="font-favorit">
     <h3 className="text-4xl font-recoleta font-bold mb-6">prototyping2</h3>
     <p className="text-xl font-light">
       Our team connects skills that are usually compartmentalized: <span className="font-recoleta font-bold">data prototyping</span>, 
@@ -129,7 +129,7 @@ const Tab1 = ({isInView}: {isInView: () => void}) => {
   </div>
 }
 
-const Tab2 =({isInView}: {isInView: () => void}) => {
+const Tab2 = ({id, isInView}: {id: string, isInView: () => void}) => {
   const { ref } = useInView({
     threshold: 0.5,
     fallbackInView: false,
@@ -138,7 +138,7 @@ const Tab2 =({isInView}: {isInView: () => void}) => {
     },
   });
 
-  return <div ref={ref} className="font-favorit">
+  return <div ref={ref} id={id} className="font-favorit">
     <h3 className="text-4xl font-recoleta font-bold mb-6">prototyping3</h3>
     <p className="text-xl font-light">
       Our team connects skills that are usually compartmentalized: <span className="font-recoleta font-bold">data prototyping</span>, 
@@ -189,7 +189,7 @@ const Tab2 =({isInView}: {isInView: () => void}) => {
   </div>
 }
 
-const Tab3 = ({isInView}: {isInView: () => void}) => {
+const Tab3 = ({id, isInView}: {id: string, isInView: () => void}) => {
   const { ref } = useInView({
     threshold: 0.5,
     fallbackInView: false,
@@ -197,7 +197,8 @@ const Tab3 = ({isInView}: {isInView: () => void}) => {
       if (inView) isInView()
     },
   });
-  return <div ref={ref} className="font-favorit">
+
+  return <div ref={ref} id={id} className="font-favorit">
     <h3 className="text-4xl font-recoleta font-bold mb-6">prototyping4</h3>
     <p className="text-xl font-light">
       Our team connects skills that are usually compartmentalized: <span className="font-recoleta font-bold">data prototyping</span>, 
@@ -248,7 +249,7 @@ const Tab3 = ({isInView}: {isInView: () => void}) => {
   </div>
 }
 
-const Tab4 = ({isInView}: {isInView: () => void}) => {
+const Tab4 = ({id, isInView}: {id: string, isInView: () => void}) => {
   const { ref } = useInView({
     threshold: 0.5,
     fallbackInView: false,
@@ -256,7 +257,8 @@ const Tab4 = ({isInView}: {isInView: () => void}) => {
       if (inView) isInView()
     },
   });
-  return <div ref={ref} className="font-favorit">
+
+  return <div ref={ref} id={id} className="font-favorit">
     <h3 className="text-4xl font-recoleta font-bold mb-6">prototyping5</h3>
     <p className="text-xl font-light">
       Our team connects skills that are usually compartmentalized: <span className="font-recoleta font-bold">data prototyping</span>, 
@@ -317,7 +319,15 @@ const tabsMenu = [
 ]
 
 export default function Skills() {
+  let tabTimeout: any = null
+
   const [activeTab, setActiveTab] = useState(0)  
+
+  const setTab = (idx: number) => tabTimeout = setTimeout(() => setActiveTab(idx), 500)
+
+  useEffect(()=> {
+    return () => clearTimeout(tabTimeout)
+  }, [])
 
   return (
     <Section>
@@ -333,38 +343,41 @@ export default function Skills() {
             <p className="text-xl font-favorit font-light mt-6">Our team connects skills that are usually compartmentalized:</p>
             <ul className="flex flex-col mt-20 font-recoleta">
               {tabsMenu.map( (tab, idx) => (
-                <li 
-                  key={idx} 
-                  className={clsx(
-                    "flex text-2xl font-light border-b border-gray-400 last:border-0 pb-3 mb-3 pr-5 h-12 cursor-pointer transition-all", 
-                    activeTab === idx && 'h-24 font-bold'
-                  )}
-                  onClick={()=> setActiveTab(idx)}
-                >
-                  {tab.label}
-                  <div className={clsx(
-                        "flex flex-1 justify-end items-center overflow-hidden transition-all",
-                        activeTab === idx ? 'h-24' : 'h-0'
-                  )}>
-                    <Image
-                      unoptimized
-                      src={tab.icon}
-                      alt={tab.label}
-                      width={50}
-                      height={24}
-                    />
+                <li key={idx}>
+                  <a 
+                    href={`#tab${idx}`} 
+                    className={clsx(
+                      "flex text-2xl font-light pb-3 mb-3 pr-5 h-12 transition-all", 
+                      activeTab === idx && 'h-24 font-bold',
+                      idx !== tabsMenu.length - 1 && 'border-b border-gray-400'
+                    )} 
+                    onClick={()=> setTab(idx)}
+                  >
+                    {tab.label}
+                    <div className={clsx(
+                          "flex flex-1 justify-end items-center overflow-hidden transition-all",
+                          activeTab === idx ? 'h-24' : 'h-0'                          
+                    )}>
+                      <Image
+                        unoptimized
+                        src={tab.icon}
+                        alt={tab.label}
+                        width={50}
+                        height={24}
+                      />
                     </div>
+                  </a>
                 </li>
               ))}
             </ul>
             </StickyBox>
           </div>
         <div className="basis-8/12 lg:max-w-[600px]">
-          <Tab0 isInView={()=> setActiveTab(0)} />
-          <Tab1 isInView={()=> setActiveTab(1)} />
-          <Tab2 isInView={()=> setActiveTab(2)} />
-          <Tab3 isInView={()=> setActiveTab(3)} />
-          <Tab4 isInView={()=> setActiveTab(4)} />
+          <Tab0 id="tab0" isInView={()=> setActiveTab(0)} />
+          <Tab1 id="tab1" isInView={()=> setActiveTab(1)} />
+          <Tab2 id="tab2" isInView={()=> setActiveTab(2)} />
+          <Tab3 id="tab3" isInView={()=> setActiveTab(3)} />
+          <Tab4 id="tab4" isInView={()=> setActiveTab(4)} />
         </div>
       </Container>
     </Section>
