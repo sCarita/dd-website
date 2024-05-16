@@ -7,9 +7,18 @@ import Button from "../components/button";
 import Image from "next/image";
 import StickyBox from "react-sticky-box";
 import clsx from "clsx";
+import { useInView } from "react-intersection-observer";
 
-const Tab0 = () => {
-  return <div className="font-favorit">
+const Tab0 = ({isInView}: {isInView: () => void}) => {
+  const { ref } = useInView({
+    threshold: 0.5,
+    fallbackInView: false,
+    onChange: (inView) => {
+      if (inView) isInView()
+    },
+  });
+
+  return <div ref={ref} className="font-favorit">
     <h3 className="text-4xl font-recoleta font-bold mb-6">prototyping</h3>
     <p className="text-xl font-light">
       Our team connects skills that are usually compartmentalized: <span className="font-recoleta font-bold">data prototyping</span>, 
@@ -60,8 +69,16 @@ const Tab0 = () => {
   </div>
 }
 
-const Tab1 = () => {
-  return <div className="font-favorit">
+const Tab1 = ({isInView}: {isInView: () => void}) => {
+  const { ref } = useInView({
+    threshold: 0.5,
+    fallbackInView: false,
+    onChange: (inView) => {
+      if (inView) isInView()
+    },
+  });
+
+  return <div ref={ref} className="font-favorit">
     <h3 className="text-4xl font-recoleta font-bold mb-6">prototyping2</h3>
     <p className="text-xl font-light">
       Our team connects skills that are usually compartmentalized: <span className="font-recoleta font-bold">data prototyping</span>, 
@@ -112,8 +129,16 @@ const Tab1 = () => {
   </div>
 }
 
-const Tab2 = () => {
-  return <div className="font-favorit">
+const Tab2 =({isInView}: {isInView: () => void}) => {
+  const { ref } = useInView({
+    threshold: 0.5,
+    fallbackInView: false,
+    onChange: (inView) => {
+      if (inView) isInView()
+    },
+  });
+
+  return <div ref={ref} className="font-favorit">
     <h3 className="text-4xl font-recoleta font-bold mb-6">prototyping3</h3>
     <p className="text-xl font-light">
       Our team connects skills that are usually compartmentalized: <span className="font-recoleta font-bold">data prototyping</span>, 
@@ -164,8 +189,15 @@ const Tab2 = () => {
   </div>
 }
 
-const Tab3 = () => {
-  return <div className="font-favorit">
+const Tab3 = ({isInView}: {isInView: () => void}) => {
+  const { ref } = useInView({
+    threshold: 0.5,
+    fallbackInView: false,
+    onChange: (inView) => {
+      if (inView) isInView()
+    },
+  });
+  return <div ref={ref} className="font-favorit">
     <h3 className="text-4xl font-recoleta font-bold mb-6">prototyping4</h3>
     <p className="text-xl font-light">
       Our team connects skills that are usually compartmentalized: <span className="font-recoleta font-bold">data prototyping</span>, 
@@ -216,8 +248,15 @@ const Tab3 = () => {
   </div>
 }
 
-const Tab4 = () => {
-  return <div className="font-favorit">
+const Tab4 = ({isInView}: {isInView: () => void}) => {
+  const { ref } = useInView({
+    threshold: 0.5,
+    fallbackInView: false,
+    onChange: (inView) => {
+      if (inView) isInView()
+    },
+  });
+  return <div ref={ref} className="font-favorit">
     <h3 className="text-4xl font-recoleta font-bold mb-6">prototyping5</h3>
     <p className="text-xl font-light">
       Our team connects skills that are usually compartmentalized: <span className="font-recoleta font-bold">data prototyping</span>, 
@@ -278,7 +317,7 @@ const tabsMenu = [
 ]
 
 export default function Skills() {
-  const [activeTab, setActiveTab] = useState(0)
+  const [activeTab, setActiveTab] = useState(0)  
 
   return (
     <Section>
@@ -321,14 +360,11 @@ export default function Skills() {
             </StickyBox>
           </div>
         <div className="basis-8/12 lg:max-w-[600px]">
-          {
-            activeTab === 0 ? <Tab0 /> :
-            activeTab === 1 ? <Tab1 /> :
-            activeTab === 2 ? <Tab2 /> :
-            activeTab === 3 ? <Tab3 /> :
-            activeTab === 4 ? <Tab4 /> :
-            <></>
-          }
+          <Tab0 isInView={()=> setActiveTab(0)} />
+          <Tab1 isInView={()=> setActiveTab(1)} />
+          <Tab2 isInView={()=> setActiveTab(2)} />
+          <Tab3 isInView={()=> setActiveTab(3)} />
+          <Tab4 isInView={()=> setActiveTab(4)} />
         </div>
       </Container>
     </Section>
