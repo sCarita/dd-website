@@ -5,12 +5,12 @@ import "./globals.css";
 const basis = localFont({
   src: [
     {
-      path: '/fonts/BasisGrotesqueArabicPro-Bold.ttf',
+      path: 'fonts/BasisGrotesqueArabicPro-Bold.ttf',
       weight: '600',
       style: 'normal',
     },
     {
-      path: '/fonts/BasisGrotesqueArabicPro-Light.ttf',
+      path: 'fonts/BasisGrotesqueArabicPro-Light.ttf',
       weight: '300',
       style: 'normal',
     },
@@ -21,12 +21,12 @@ const basis = localFont({
 const favorit = localFont({
   src: [
     {
-      path: '/fonts/FavoritBookC.ttf',
+      path: 'fonts/FavoritBookC.ttf',
       weight: '400',
       style: 'normal',
     },
     {
-      path: '/fonts/FavoritLightC.ttf',
+      path: 'fonts/FavoritLightC.ttf',
       weight: '300',
       style: 'normal',
     },
@@ -37,12 +37,12 @@ const favorit = localFont({
 const recoleta = localFont({
   src: [
     {
-      path: '/fonts/Recoleta-regular.ttf',
+      path: 'fonts/Recoleta-regular.ttf',
       weight: '400',
       style: 'normal',
     },
     {
-      path: '/fonts/Recoleta-Medium.ttf',
+      path: 'fonts/Recoleta-Medium.ttf',
       weight: '500',
       style: 'normal',
     },
@@ -50,7 +50,7 @@ const recoleta = localFont({
   variable: '--font-recoleta',
 })
 
-const pixel = localFont({ src: '/fonts/pixelmix_bold.ttf', variable: '--font-pixel', })
+const pixel = localFont({ src: 'fonts/pixelmix_bold.ttf', variable: '--font-pixel', })
 
 
 export const metadata: Metadata = {
