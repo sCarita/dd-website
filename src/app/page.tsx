@@ -56,7 +56,7 @@ export default function Home() {
         <Container>
           <div className="flex flex-col flex-1 items-start">
               <Image src="/dd_logo.svg" alt="Logo" width={180} height={80} className="mb-14 invert dark:invert-0"/>
-              <Button>Schedule a Call</Button>
+              {/* <Button>Schedule a Call</Button> */}
           </div>
           <div className="flex flex-col justify-start items-start">
             <h4 className="text-3xl font-bold mb-8 font-recoleta">Our Company</h4>
@@ -71,7 +71,7 @@ export default function Home() {
             <h4 className="text-3xl font-bold mb-8 font-recoleta">Contacts</h4>
             <div className="text-xl mb-8">
               <h5 className="font-recoleta font-bold">_addr</h5>
-              <Image src="/address.svg" alt="address" width={100} height={100} className="mb-14 w-auto h-auto"/>
+              <Image src="/address.svg" alt="address" width={100} height={100} className="mb-14 w-auto h-auto invert black:invert-0"/>
             </div>
             <div className="text-xl  mb-8">
               <h5 className="font-recoleta font-bold">_email</h5>
