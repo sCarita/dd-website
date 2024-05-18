@@ -11,7 +11,7 @@ import ThemeToggle from "./components/themeToggle";
 export default function Home() {
   return (
     <>
-      <section className="fixed left-0 top-0 w-full py-4 z-10">
+      {/* <section className="fixed left-0 top-0 w-full py-4 z-10">
         <Container className="justify-end">
           <ThemeToggle />
         </Container>
@@ -34,23 +34,19 @@ export default function Home() {
         <Button className="m-auto mt-20">Book a call and meet us</Button>
       </Section>
 
-      <Skills />
+      <Skills /> */}
 
       <Section>
         <Container>
           <div className="md:flex-col text-center max-w-2xl m-auto font-favorit">
             <h3 className="text-4xl mb-10">
-              We are gathering capital to invest in our own inhouse products
+            Our website is currently under construction as we work to bring you an even better experience. 
             </h3>
 
             <p className="text-xl font-light">
-              Our team connects skills that are usually compartmentalized: data prototyping, 
-              complex information design, processing of large datasets, creative coding, data journalism, 
-              distributed system.
+            We appreciate your patience during this time and look forward to unveiling our new and improved site soon.
             </p>
-            <p className="text-xl font-light mt-6">We will share details and blog posts soon enough...</p>
-            
-            <Image src="/dd_eye.png" alt="Diffusion Dynamics eye" width={80} height={80} className="m-auto mt-10"/>
+            <p className="text-xl font-light mt-6">We will share further details and blog posts soon enough...</p>
           </div>
         </Container>
       </Section>
@@ -68,7 +64,7 @@ export default function Home() {
               <li className="text-2xl font-light border-b border-gray-400 pb-3 mb-3 pr-5"><a href="#">about us</a></li>
               <li className="text-2xl font-light border-b border-gray-400 pb-3 mb-3 pr-5"><a href="#">careers</a></li>
               <li className="text-2xl font-light border-b border-gray-400 pb-3 mb-3 pr-5"><a href="#">blog</a></li>
-              <li className="text-2xl font-light"><a href="#">book us</a></li>
+              <li className="text-2xl font-light"><a href="https://calendly.com/diffusion-dynamics/30min">book us</a></li>
             </ul>
           </div>
           <div>
