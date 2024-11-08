@@ -20,9 +20,12 @@ export default function Home() {
       <Section>
         <Container>
           <div className="basis-4/6 xl:basis-3/6">
-            <h2 className="text-4xl font-favorit">
-              With a vision for innovation and excellence, 
-              we create cohesive brand transformations that reflect the values and ethos of your company.
+            <h2 className="text-3xl font-favorit font-thin">
+            Accelerate your success through cutting-edge <span className="font-recoleta font-bold text-green-300">Artificial Intelligence</span> solutions.
+            <br /><br />
+            </h2>
+            <h2 className="text-3xl font-favorit font-thin">
+            We deliver <span className="font-recoleta font-bold text-green-300">Applications</span> that embody your company's vision, transforming ambitious ideas into impactful realities.
             </h2>
           </div>
 
@@ -31,7 +34,7 @@ export default function Home() {
           </div>
         </Container>
 
-        <Button className="m-auto mt-20">Book a call and meet us</Button>
+        <Button className="m-auto mt-20">Quickly ! <span className="text-2xl px-2">☎️</span> Book a Call</Button>
       </Section>
 
       <Skills />
@@ -44,7 +47,7 @@ export default function Home() {
             </h3>
 
             <p className="text-xl font-light">
-              Our team connects skills that are usually compartmentalized: data prototyping, 
+              Our team connects skills that are usually compartmentasslized: data prototyping, 
               complex information design, processing of large datasets, creative coding, data journalism, 
               distributed system.
             </p>

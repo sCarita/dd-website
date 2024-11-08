@@ -9,313 +9,399 @@ import StickyBox from "react-sticky-box";
 import clsx from "clsx";
 import { useInView } from "react-intersection-observer";
 
-const Tab0 = ({id, isInView}: {id: string, isInView: () => void}) => {
+const Tab0 = ({ id, isInView }: { id: string; isInView: () => void }) => {
   const { ref } = useInView({
     threshold: 0.5,
     fallbackInView: false,
     onChange: (inView) => {
-      if (inView) isInView()
+      if (inView) isInView();
     },
   });
 
-  return <div ref={ref} id={id} className="font-favorit">
-    <h3 className="text-4xl font-recoleta font-bold mb-6">prototyping</h3>
-    <p className="text-xl font-light">
-      Our team connects skills that are usually compartmentalized: <span className="font-recoleta font-bold">data prototyping</span>, 
-      complex information design, processing of large datasets, creative coding, data journalism, 
-      <span className="font-recoleta font-bold">distributed system</span>.
-    </p>
-    <div className="flex flex-col sm:flex-row justify-between gap-6 mt-14">
-      <div className="basis-6/12">
-        <h4 className="text-xl">YOUR CHALLENGES</h4>
-        <ul className="list-disc text-lg font-light">
-          <li>Understand the data requirements of your users</li>
-          <li>Discover useful information that can be extracted from your data</li>
-          <li>Understand how different datasets can be tailored for different audiences</li>
-        </ul>
+  return (
+    <div ref={ref} id={id} className="font-favorit">
+      <h3 className="text-4xl font-recoleta font-bold mb-6">
+        Machine Learning Modeling
+      </h3>
+      <p className="text-xl font-light">
+        We integrate <span className="font-recoleta font-bold">machine learning algorithms</span>, time series analysis, predictive modeling techniques, and dynamic data visualization to deliver comprehensive solutions.
+      </p>
+      <div className="flex flex-col sm:flex-row justify-between gap-6 mt-14">
+        <div className="basis-6/12">
+          <h4 className="text-xl">YOUR CHALLENGES</h4>
+          <ul className="list-disc text-lg font-light">
+            <li>Need accurate predictive models for business decision making.</li>
+            <li>Handling large and complex datasets effectively, daily and continuously.</li>
+            <li>Detecting patterns and anomalies in critical parts of your business.</li>
+          </ul>
+        </div>
+        <div className="basis-5/12">
+          <h4 className="text-xl">OUR EXPERTISE</h4>
+          <ul className="list-disc text-lg font-light">
+            <li>
+              Developed LLM-based systems with dimensionality reduction for skill
+              categorization.
+            </li>
+            <li>Time series analysis for industrial anomaly detection.</li>
+            <li>Churn prediction systems for telecommunications.</li>
+            <li>Debt collection likelihood modeling.</li>
+            <li>
+              Proven success in international data science competitions (Kaggle)
+            </li>
+          </ul>
+        </div>
       </div>
-      <div className="basis-5/12">
-        <h4 className="text-xl">OUR EXPERTISE</h4>
-        <ul className="list-disc text-lg font-light">
-          <li>User interviews</li>
-          <li>User research</li>
-          <li>Brainstorming workshops</li>
-          <li>Data analysis</li>
-          <li>Translation of data to information</li>
-          <li>Prioritization of needs</li>
-          <li>Use cases definition</li>
-          <li>Drafting specifications</li>
-        </ul>
-      </div>
-    </div>
-    <Button className="m-auto mt-14">Curious? Book a meeting.</Button>
-    <div className="mt-14">
-      <h4 className="mb-4">RECENT PROJECT</h4>
-      <div className="flex gap-2 font-light">
-        <Image src="/next.svg" alt="Logo" width={200} height={24} className="m-auto bg-white px-2 py-12 invert dark:invert-0"/>
-        <div className="flex flex-col flex-1 justify-between p-2 bg-zinc-200 dark:bg-zinc-900">
-          <div>
-            <p className="text-sm">PROTOTYPE / SWISSCOM MOBILITY INSIGTHS</p>
-            <p className="text-lg mt-1">Conveying the value of Swisscom’s mobility data to better understand urban mobility.</p>
-          </div>
-          <div className="flex gap-2">
-            <Image src="/reactIcon.svg" alt="react" width={20} height={20} className="invert dark:invert-0"/>
-            <Image src="/gptIcon.svg" alt="gtp" width={20} height={20} className="invert dark:invert-0"/>
-            <Image src="/typescriptIcon.svg" alt="typescript" width={20} height={20} className="invert dark:invert-0"/>
+      <Button className="m-auto mt-14">🛰️ Start detection today.</Button>
+      <div className="mt-14">
+        <h4 className="mb-4">RECENT PROJECT</h4>
+        <div className="flex gap-2 font-light">
+          <Image
+            src="/ml_modelling.webp"
+            alt="Project Logo"
+            width={200}
+            height={24}
+            className="m-auto bg-white px-2 py-12 invert dark:invert-0"
+          />
+          <div className="flex flex-col flex-1 justify-between p-2 bg-zinc-200 dark:bg-zinc-900">
+            <div>
+              <p className="text-sm">
+                MACHINE LEARNING / INDUSTRIAL ANOMALY DETECTION
+              </p>
+              <p className="text-lg mt-1">
+                Implemented predictive maintenance using time series data to
+                detect equipment anomalies, reducing downtime by 30%.
+              </p>
+              <br/>
+            </div>
+            <div className="flex gap-2">
+              <Image src="/reactIcon.svg" alt="react" width={20} height={20} className="invert dark:invert-0"/>
+              <Image src="/gptIcon.svg" alt="gtp" width={20} height={20} className="invert dark:invert-0"/>
+              <Image src="/typescriptIcon.svg" alt="typescript" width={20} height={20} className="invert dark:invert-0"/>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-}
+  );
+};
 
-const Tab1 = ({id, isInView}: {id: string, isInView: () => void}) => {
+const Tab1 = ({ id, isInView }: { id: string; isInView: () => void }) => {
   const { ref } = useInView({
     threshold: 0.5,
     fallbackInView: false,
     onChange: (inView) => {
-      if (inView) isInView()
+      if (inView) isInView();
     },
   });
 
-  return <div ref={ref} id={id} className="font-favorit mt-20">
-    <h3 className="text-4xl font-recoleta font-bold mb-6">prototyping2</h3>
-    <p className="text-xl font-light">
-      Our team connects skills that are usually compartmentalized: <span className="font-recoleta font-bold">data prototyping</span>, 
-      complex information design, processing of large datasets, creative coding, data journalism, 
-      <span className="font-recoleta font-bold">distributed system</span>.
-    </p>
-    <div className="flex flex-col sm:flex-row justify-between gap-6 mt-14">
-      <div className="basis-6/12">
-        <h4 className="text-xl">YOUR CHALLENGES</h4>
-        <ul className="list-disc text-lg font-light">
-          <li>Understand the data requirements of your users</li>
-          <li>Discover useful information that can be extracted from your data</li>
-          <li>Understand how different datasets can be tailored for different audiences</li>
-        </ul>
+  return (
+    <div ref={ref} id={id} className="font-favorit mt-20">
+      <h3 className="text-4xl font-recoleta font-bold mb-6">
+        Web & Mobile App Development
+      </h3>
+      <p className="text-xl font-light">
+        We specialize in creating high-performance web and mobile applications. Ensuring a stable operation since day one.
+      </p>
+      <div className="flex flex-col sm:flex-row justify-between gap-6 mt-14">
+        <div className="basis-6/12">
+          <h4 className="text-xl">YOUR CHALLENGES</h4>
+          <ul className="list-disc text-lg font-light">
+            <li>Need robust and scalable web and mobile applications.</li>
+            <li>Integrating secure payment systems, including crypto payments.</li>
+            <li>Enhancing user engagement with real-time features and push notifications.</li>
+            <li>Analyzing user behavior to optimize application funnels.</li>
+          </ul>
+        </div>
+        <div className="basis-5/12">
+          <h4 className="text-xl">OUR EXPERTISE</h4>
+          <ul className="list-disc text-lg font-light">
+            <li>Developed cross-platform apps for iOS, Android, and web.</li>
+            <li>Implemented web3 applications with crypto payment integration and smart contract interactions.</li>
+            <li>Unlocked push notifications, campaigns, and promo codes with friendly dashboards.</li>
+            <li>Programmed complex event tracking systems for user behavior analysis.</li>
+            <li>Integrated Chromecast and Apple AirPlay features.</li>
+            <li>Built real-time apps that react instantly to underlying data changes.</li>
+          </ul>
+        </div>
       </div>
-      <div className="basis-5/12">
-        <h4 className="text-xl">OUR EXPERTISE</h4>
-        <ul className="list-disc text-lg font-light">
-          <li>User interviews</li>
-          <li>User research</li>
-          <li>Brainstorming workshops</li>
-          <li>Data analysis</li>
-          <li>Translation of data to information</li>
-          <li>Prioritization of needs</li>
-          <li>Use cases definition</li>
-          <li>Drafting specifications</li>
-        </ul>
-      </div>
-    </div>
-    <Button className="m-auto mt-14">Curious? Book a meeting.</Button>
-    <div className="mt-14">
-      <h4 className="mb-4">RECENT PROJECT</h4>
-      <div className="flex gap-2 font-light">
-        <Image src="/next.svg" alt="Logo" width={200} height={24} className="m-auto bg-white px-2 py-12 invert dark:invert-0"/>
-        <div className="flex flex-col flex-1 justify-between p-2 bg-zinc-200 dark:bg-zinc-900">
-          <div>
-            <p className="text-sm">PROTOTYPE / SWISSCOM MOBILITY INSIGTHS</p>
-            <p className="text-lg mt-1">Conveying the value of Swisscom’s mobility data to better understand urban mobility.</p>
-          </div>
-          <div className="flex gap-2">
-            <Image src="/reactIcon.svg" alt="react" width={20} height={20} className="invert dark:invert-0"/>
-            <Image src="/gptIcon.svg" alt="gtp" width={20} height={20} className="invert dark:invert-0"/>
-            <Image src="/typescriptIcon.svg" alt="typescript" width={20} height={20} className="invert dark:invert-0"/>
+      <Button className="m-auto mt-14">🚀 Launch your app with us</Button>
+      <div className="mt-14">
+        <h4 className="mb-4">RECENT PROJECT</h4>
+        <div className="flex gap-2 font-light">
+          <Image
+            src="/web_mobile_app.webp"
+            alt="Project Logo"
+            width={200}
+            height={24}
+            className="m-auto bg-white px-2 py-12 invert dark:invert-0"
+          />
+          <div className="flex flex-col flex-1 justify-between p-2 bg-zinc-200 dark:bg-zinc-900">
+            <div>
+              <p className="text-sm">APP / PUSH NOTIFICATIONS VS EMAIL CAMPAIGNS</p>
+              <p className="text-lg mt-1">
+              Enhanced user engagement by integrating push notifications into the app, achieving a 10% engagement rate compared to 1% with traditional email campaigns.
+              </p>
+              <br />
+            </div>
+            <div className="flex gap-2">
+              <Image src="/reactIcon.svg" alt="react" width={20} height={20} className="invert dark:invert-0"/>
+              <Image src="/gptIcon.svg" alt="gtp" width={20} height={20} className="invert dark:invert-0"/>
+              <Image src="/typescriptIcon.svg" alt="typescript" width={20} height={20} className="invert dark:invert-0"/>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-}
+  );
+};
 
-const Tab2 = ({id, isInView}: {id: string, isInView: () => void}) => {
+const Tab2 = ({ id, isInView }: { id: string; isInView: () => void }) => {
   const { ref } = useInView({
     threshold: 0.5,
     fallbackInView: false,
     onChange: (inView) => {
-      if (inView) isInView()
+      if (inView) isInView();
     },
   });
 
-  return <div ref={ref} id={id} className="font-favorit mt-20">
-    <h3 className="text-4xl font-recoleta font-bold mb-6">prototyping3</h3>
-    <p className="text-xl font-light">
-      Our team connects skills that are usually compartmentalized: <span className="font-recoleta font-bold">data prototyping</span>, 
-      complex information design, processing of large datasets, creative coding, data journalism, 
-      <span className="font-recoleta font-bold">distributed system</span>.
-    </p>
-    <div className="flex flex-col sm:flex-row justify-between gap-6 mt-14">
-      <div className="basis-6/12">
-        <h4 className="text-xl">YOUR CHALLENGES</h4>
-        <ul className="list-disc text-lg font-light">
-          <li>Understand the data requirements of your users</li>
-          <li>Discover useful information that can be extracted from your data</li>
-          <li>Understand how different datasets can be tailored for different audiences</li>
-        </ul>
-      </div>
-      <div className="basis-5/12">
-        <h4 className="text-xl">OUR EXPERTISE</h4>
-        <ul className="list-disc text-lg font-light">
-          <li>User interviews</li>
-          <li>User research</li>
-          <li>Brainstorming workshops</li>
-          <li>Data analysis</li>
-          <li>Translation of data to information</li>
-          <li>Prioritization of needs</li>
-          <li>Use cases definition</li>
-          <li>Drafting specifications</li>
-        </ul>
-      </div>
-    </div>
-    <Button className="m-auto mt-14">Curious? Book a meeting.</Button>
-    <div className="mt-14">
-      <h4 className="mb-4">RECENT PROJECT</h4>
-      <div className="flex gap-2 font-light">
-        <Image src="/next.svg" alt="Logo" width={200} height={24} className="m-auto bg-white px-2 py-12 invert dark:invert-0"/>
-        <div className="flex flex-col flex-1 justify-between p-2 bg-zinc-200 dark:bg-zinc-900">
-          <div>
-            <p className="text-sm">PROTOTYPE / SWISSCOM MOBILITY INSIGTHS</p>
-            <p className="text-lg mt-1">Conveying the value of Swisscom’s mobility data to better understand urban mobility.</p>
-          </div>
-          <div className="flex gap-2">
-            <Image src="/reactIcon.svg" alt="react" width={20} height={20} className="invert dark:invert-0"/>
-            <Image src="/gptIcon.svg" alt="gtp" width={20} height={20} className="invert dark:invert-0"/>
-            <Image src="/typescriptIcon.svg" alt="typescript" width={20} height={20} className="invert dark:invert-0"/>
-          </div>
+  return (
+    <div ref={ref} id={id} className="font-favorit mt-20">
+      <h3 className="text-4xl font-recoleta font-bold mb-6">
+        Voice AI & Custom Audio Solutions
+      </h3>
+      <p className="text-xl font-light">
+        We have extensive experience working with both male and female voices, creating customized vocal profiles with specific names and emotional tones. Our expertise includes integrating moods into speech, as well as working with subtitles and subtitle synchronization, ensuring precise timing even with the inclusion of custom voices.
+      </p>
+      <div className="flex flex-col sm:flex-row justify-between gap-6 mt-14">
+        <div className="basis-6/12">
+          <h4 className="text-xl">YOUR CHALLENGES</h4>
+          <ul className="list-disc text-lg font-light">
+            <li>Creating engaging audio experiences with customized voices.</li>
+            <li>Synchronizing audio and subtitles for accessibility.</li>
+            <li>Incorporating emotional tones and moods into speech output.</li>
+            <li>Adjusting timings when using custom voices.</li>
+          </ul>
+        </div>
+        <div className="basis-5/12">
+          <h4 className="text-xl">OUR EXPERTISE</h4>
+          <ul className="list-disc text-lg font-light">
+            <li>Development of custom male and female voice profiles.</li>
+            <li>Integration of mood and emotional tone into speech synthesis.</li>
+            <li>Advanced subtitle synchronization and correction.</li>
+            <li>Experience with voice cloning and text-to-speech technologies.</li>
+            <li>Dynamic timing adjustments for custom voices.</li>
+          </ul>
         </div>
       </div>
+      <Button className="m-auto mt-14">🎤 Elevate Your Audio Experience</Button>
     </div>
-  </div>
-}
+  );
+};
 
-const Tab3 = ({id, isInView}: {id: string, isInView: () => void}) => {
+const Tab3 = ({ id, isInView }: { id: string; isInView: () => void }) => {
   const { ref } = useInView({
     threshold: 0.5,
     fallbackInView: false,
     onChange: (inView) => {
-      if (inView) isInView()
+      if (inView) isInView();
     },
   });
 
-  return <div ref={ref} id={id} className="font-favorit mt-20">
-    <h3 className="text-4xl font-recoleta font-bold mb-6">prototyping4</h3>
-    <p className="text-xl font-light">
-      Our team connects skills that are usually compartmentalized: <span className="font-recoleta font-bold">data prototyping</span>, 
-      complex information design, processing of large datasets, creative coding, data journalism, 
-      <span className="font-recoleta font-bold">distributed system</span>.
-    </p>
-    <div className="flex flex-col sm:flex-row justify-between gap-6 mt-14">
-      <div className="basis-6/12">
-        <h4 className="text-xl">YOUR CHALLENGES</h4>
-        <ul className="list-disc text-lg font-light">
-          <li>Understand the data requirements of your users</li>
-          <li>Discover useful information that can be extracted from your data</li>
-          <li>Understand how different datasets can be tailored for different audiences</li>
-        </ul>
+  return (
+    <div ref={ref} id={id} className="font-favorit mt-20">
+      <h3 className="text-4xl font-recoleta font-bold mb-6">AI Vision & Image Generation</h3>
+      <p className="text-xl font-light">
+        We have harnessed advanced AI vision technologies to create customizable scenes for children's stories, utilizing workflows in <span className="font-recoleta font-bold">ComfyUI</span> to perform face swaps and apply animated styles to generated images. Our expertise extends to generating themed backgrounds and executing large-scale production with over 150+ GPUs, including L40 and RTX 4090, in a distributed system managed through worldwide geo load balancing.
+      </p>
+      <div className="flex flex-col sm:flex-row justify-between gap-6 mt-14">
+        <div className="basis-6/12">
+          <h4 className="text-xl">YOUR CHALLENGES</h4>
+          <ul className="list-disc text-lg font-light">
+            <li>Need for high-quality, customized visual content.</li>
+            <li>Scaling AI image generation to meet production demands.</li>
+            <li>Implementing advanced AI vision solutions in production environments.</li>
+            <li>Optimizing performance across GPU based distributed systems.</li>
+          </ul>
+        </div>
+        <div className="basis-5/12">
+          <h4 className="text-xl">OUR EXPERTISE</h4>
+          <ul className="list-disc text-lg font-light">
+            <li>Advanced workflows in ComfyUI using LoRAs for style modification and subject injection.</li>
+            <li>Fine-tuning models with Auto1111 and Kohya for Dreambooth customization.</li>
+            <li>Operating large-scale distributed systems with 150+ GPUs.</li>
+            <li>Production-ready environments on Linux with CUDA optimization.</li>
+            <li>Geo load balancing for worldwide deployment.</li>
+            <li>Experience in Kaggle competitions (e.g., lung cancer detection, seal counting in drone photos).</li>
+          </ul>
+        </div>
       </div>
-      <div className="basis-5/12">
-        <h4 className="text-xl">OUR EXPERTISE</h4>
-        <ul className="list-disc text-lg font-light">
-          <li>User interviews</li>
-          <li>User research</li>
-          <li>Brainstorming workshops</li>
-          <li>Data analysis</li>
-          <li>Translation of data to information</li>
-          <li>Prioritization of needs</li>
-          <li>Use cases definition</li>
-          <li>Drafting specifications</li>
-        </ul>
-      </div>
-    </div>
-    <Button className="m-auto mt-14">Curious? Book a meeting.</Button>
-    <div className="mt-14">
-      <h4 className="mb-4">RECENT PROJECT</h4>
-      <div className="flex gap-2 font-light">
-        <Image src="/next.svg" alt="Logo" width={200} height={24} className="m-auto bg-white px-2 py-12 invert dark:invert-0"/>
-        <div className="flex flex-col flex-1 justify-between p-2 bg-zinc-200 dark:bg-zinc-900">
-          <div>
-            <p className="text-sm">PROTOTYPE / SWISSCOM MOBILITY INSIGTHS</p>
-            <p className="text-lg mt-1">Conveying the value of Swisscom’s mobility data to better understand urban mobility.</p>
-          </div>
-          <div className="flex gap-2">
+      <Button className="m-auto mt-14">🖼️ Transform Your Visual Content</Button>
+      <div className="mt-14">
+        <h4 className="mb-4">RECENT PROJECT</h4>
+        <div className="flex gap-2 font-light">
+          <Image
+            src="/ai_vision_project.webp"
+            alt="AI Vision Project"
+            width={200}
+            height={24}
+            className="m-auto bg-white px-2 py-12 invert dark:invert-0"
+          />
+          <div className="flex flex-col flex-1 justify-between p-2 bg-zinc-200 dark:bg-zinc-900">
+            <div>
+              <p className="text-sm">AI VISION / CHILDREN'S STORY SCENE GENERATION</p>
+              <p className="text-lg mt-1">
+                Deployed complex ComfyUI workflows at scale, utilizing over 150 GPUs to generate customizable scenes with dynamic face swaps and animated styles for children's stories.
+              </p>
+            </div>
+            <div className="flex gap-2">
             <Image src="/reactIcon.svg" alt="react" width={20} height={20} className="invert dark:invert-0"/>
-            <Image src="/gptIcon.svg" alt="gtp" width={20} height={20} className="invert dark:invert-0"/>
-            <Image src="/typescriptIcon.svg" alt="typescript" width={20} height={20} className="invert dark:invert-0"/>
+              <Image src="/gptIcon.svg" alt="gtp" width={20} height={20} className="invert dark:invert-0"/>
+              <Image src="/typescriptIcon.svg" alt="typescript" width={20} height={20} className="invert dark:invert-0"/>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-}
+  );
+};
 
-const Tab4 = ({id, isInView}: {id: string, isInView: () => void}) => {
+const Tab4 = ({ id, isInView }: { id: string; isInView: () => void }) => {
   const { ref } = useInView({
     threshold: 0.5,
     fallbackInView: false,
     onChange: (inView) => {
-      if (inView) isInView()
+      if (inView) isInView();
     },
   });
 
-  return <div ref={ref} id={id} className="font-favorit mt-20">
-    <h3 className="text-4xl font-recoleta font-bold mb-6">prototyping5</h3>
-    <p className="text-xl font-light">
-      Our team connects skills that are usually compartmentalized: <span className="font-recoleta font-bold">data prototyping</span>, 
-      complex information design, processing of large datasets, creative coding, data journalism, 
-      <span className="font-recoleta font-bold">distributed system</span>.
-    </p>
-    <div className="flex flex-col sm:flex-row justify-between gap-6 mt-14">
-      <div className="basis-6/12">
-        <h4 className="text-xl">YOUR CHALLENGES</h4>
-        <ul className="list-disc text-lg font-light">
-          <li>Understand the data requirements of your users</li>
-          <li>Discover useful information that can be extracted from your data</li>
-          <li>Understand how different datasets can be tailored for different audiences</li>
-        </ul>
+  return (
+    <div ref={ref} id={id} className="font-favorit mt-20">
+      <h3 className="text-4xl font-recoleta font-bold mb-6">
+        AI Text & Language Models
+      </h3>
+      <p className="text-xl font-light">
+        We have extensive experience working with both third-party services and self-hosted solutions, specializing in chat and embedding-based Retrieval-Augmented Generation (RAG) systems. Our team has created multi-step LLM-enhanced systems to generate content for financial news, scientific publications, and character impersonation, delivering advanced AI text solutions.
+      </p>
+      <div className="flex flex-col sm:flex-row justify-between gap-6 mt-14">
+        <div className="basis-6/12">
+          <h4 className="text-xl">YOUR CHALLENGES</h4>
+          <ul className="list-disc text-lg font-light">
+            <li>Generating high-quality, domain-specific content efficiently.</li>
+            <li>Implementing advanced AI text solutions tailored to your needs.</li>
+            <li>Integrating AI chat systems for enhanced user interaction.</li>
+            <li>Deploying self-hosted AI models for data privacy and control.</li>
+          </ul>
+        </div>
+        <div className="basis-5/12">
+          <h4 className="text-xl">OUR EXPERTISE</h4>
+          <ul className="list-disc text-lg font-light">
+            <li>Development of multi-step LLM-enhanced content generation systems.</li>
+            <li>Experience with chat and embedding-based RAG systems.</li>
+            <li>Creating AI-generated content for financial news and scientific materials.</li>
+            <li>Designing character impersonation models for interactive applications.</li>
+            <li>Deploying both third-party and self-hosted AI solutions.</li>
+          </ul>
+        </div>
       </div>
-      <div className="basis-5/12">
-        <h4 className="text-xl">OUR EXPERTISE</h4>
-        <ul className="list-disc text-lg font-light">
-          <li>User interviews</li>
-          <li>User research</li>
-          <li>Brainstorming workshops</li>
-          <li>Data analysis</li>
-          <li>Translation of data to information</li>
-          <li>Prioritization of needs</li>
-          <li>Use cases definition</li>
-          <li>Drafting specifications</li>
-        </ul>
-      </div>
+      <Button className="m-auto mt-14">💡 Innovate with AI Text Solutions</Button>
     </div>
-    <Button className="m-auto mt-14">Curious? Book a meeting.</Button>
-    <div className="mt-14">
-      <h4 className="mb-4">RECENT PROJECT</h4>
-      <div className="flex gap-2 font-light">
-        <Image src="/next.svg" alt="Logo" width={200} height={24} className="m-auto bg-white px-2 py-12 invert dark:invert-0"/>
-        <div className="flex flex-col flex-1 justify-between p-2 bg-zinc-200 dark:bg-zinc-900">
-          <div>
-            <p className="text-sm">PROTOTYPE / SWISSCOM MOBILITY INSIGTHS</p>
-            <p className="text-lg mt-1">Conveying the value of Swisscom’s mobility data to better understand urban mobility.</p>
-          </div>
-          <div className="flex gap-2">
-            <Image src="/reactIcon.svg" alt="react" width={20} height={20} className="invert dark:invert-0"/>
-            <Image src="/gptIcon.svg" alt="gtp" width={20} height={20} className="invert dark:invert-0"/>
-            <Image src="/typescriptIcon.svg" alt="typescript" width={20} height={20} className="invert dark:invert-0"/>
-          </div>
+  );
+};
 
+const Tab5 = ({ id, isInView }: { id: string; isInView: () => void }) => {
+  const { ref } = useInView({
+    threshold: 0.5,
+    fallbackInView: false,
+    onChange: (inView) => {
+      if (inView) isInView();
+    },
+  });
+
+  return (
+    <div ref={ref} id={id} className="font-favorit mt-20">
+      <h3 className="text-4xl font-recoleta font-bold mb-6">
+        Data Visualization & Interactive Analytics
+      </h3>
+      <p className="text-xl font-light">
+        We have worked extensively with complex data visualizations at scale, primarily for financial SaaS platforms. Our expertise includes building heatmaps with candlestick charts overlay, live order book histograms, calendars, and timelines—all with interactive options and multiple granularities. We have also developed geo-data visualizations to provide spatial insights.
+      </p>
+      <div className="flex flex-col sm:flex-row justify-between gap-6 mt-14">
+        <div className="basis-6/12">
+          <h4 className="text-xl">YOUR CHALLENGES</h4>
+          <ul className="list-disc text-lg font-light">
+            <li>Visualizing complex financial data intuitively</li>
+            <li>Requiring real-time, interactive charts and dashboards</li>
+            <li>Handling large datasets with high performance</li>
+            <li>Providing multi-granularity views for diverse user needs</li>
+          </ul>
+        </div>
+        <div className="basis-5/12">
+          <h4 className="text-xl">OUR EXPERTISE</h4>
+          <ul className="list-disc text-lg font-light">
+            <li>Developed advanced heatmaps with candlestick overlays</li>
+            <li>Built live order book histograms for trading platforms</li>
+            <li>Created interactive calendars and timelines</li>
+            <li>Implemented geo-data visualizations for spatial analysis</li>
+            <li>Optimized performance for large-scale data visualization</li>
+            <li>Provided multi-granularity and customizable interfaces</li>
+          </ul>
+        </div>
+      </div>
+      <Button className="m-auto mt-14">📊 Elevate Your Data Insights</Button>
+      <div className="mt-14">
+        <h4 className="mb-4">RECENT PROJECT</h4>
+        <div className="flex gap-2 font-light">
+          <Image
+            src="/data_viz_project.webp"
+            alt="Data Visualization Project"
+            width={200}
+            height={24}
+            className="m-auto bg-white px-2 py-12 invert dark:invert-0"
+          />
+          <div className="flex flex-col flex-1 justify-between p-2 bg-zinc-200 dark:bg-zinc-900">
+            <div>
+              <p className="text-sm">DATA VISUALIZATION / FINANCIAL DASHBOARDS</p>
+              <p className="text-lg mt-1">
+                Developed an interactive financial dashboard featuring real-time heatmaps with candlestick charts.
+              </p>
+            </div>
+            <div className="flex gap-2">
+              <Image
+                src="/d3Icon.svg"
+                alt="D3.js"
+                width={20}
+                height={20}
+                className="invert dark:invert-0"
+              />
+              <Image
+                src="/javascriptIcon.svg"
+                alt="JavaScript"
+                width={20}
+                height={20}
+                className="invert dark:invert-0"
+              />
+              <Image
+                src="/reactIcon.svg"
+                alt="React"
+                width={20}
+                height={20}
+                className="invert dark:invert-0"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-}
+  );
+};
 
 const tabsMenu = [
-  {label: 'data collection', icon: "/dd-gifs/gif_0_white.gif", iconDark: "/dd-gifs/gif_0_black.gif"},
-  {label: 'prototyping', icon: "/dd-gifs/gif_5_white.gif", iconDark: "/dd-gifs/gif_5_black.gif"},
-  {label: 'crypto', icon: "/dd-gifs/gif_2_white.gif", iconDark: "/dd-gifs/gif_2_black.gif"},
-  {label: 'data visualization', icon: "/dd-gifs/gif_3_white.gif", iconDark: "/dd-gifs/gif_3_black.gif"},
-  {label: 'ai voice', icon: "/dd-gifs/gif_4_white.gif", iconDark: "/dd-gifs/gif_4_black.gif"},
+  {label: 'machine learning modeling', icon: "/dd-gifs/gif_0_white.gif", iconDark: "/dd-gifs/gif_0_black.gif"},
+  {label: 'web + mobile apps', icon: "/dd-gifs/gif_5_white.gif", iconDark: "/dd-gifs/gif_5_black.gif"},
+  {label: 'ai voice', icon: "/dd-gifs/gif_2_white.gif", iconDark: "/dd-gifs/gif_2_black.gif"},
+  {label: 'ai vision', icon: "/dd-gifs/gif_3_white.gif", iconDark: "/dd-gifs/gif_3_black.gif"},
+  {label: 'ai text', icon: "/dd-gifs/gif_4_white.gif", iconDark: "/dd-gifs/gif_4_black.gif"},
+  {label: 'data viz', icon: "/dd-gifs/gif_6_white.gif", iconDark: "/dd-gifs/gif_6_black.gif"},
 ]
 
 export default function Skills() {
@@ -337,11 +423,11 @@ export default function Skills() {
           <h3 className="text-4xl font-bold mb-6 hidden sm:block sm:invisible">invisible</h3>
           <StickyBox offsetTop={15}>
             <p className="text-xl font-favorit font-light">
-              Our team connects skills that are usually compartmentalized: <span className="font-recoleta font-bold">data prototyping</span>, 
-              complex information design, processing of large datasets, creative coding, data journalism, 
-              <span className="font-recoleta font-bold">distributed system</span>.
+              Our team connects skills that are usually compartmentalized: <span className="font-recoleta font-bold">Advanced Machine Learning</span> Modeling, <span className="font-recoleta font-bold">Web + Mobile</span> App
+              Development, DevOps, <span className="font-recoleta font-bold">AI voice </span>, <span className="font-recoleta font-bold">AI vision</span>, 
+              <span className="font-recoleta font-bold"> AI text processing</span> and data visualization.
+              <br />
             </p>
-            <p className="text-xl font-favorit font-light mt-6">Our team connects skills that are usually compartmentalized:</p>
             <ul className="flex flex-col mt-20 font-recoleta">
               {tabsMenu.map( (tab, idx) => (
                 <li key={idx}>
@@ -380,6 +466,7 @@ export default function Skills() {
           <Tab2 id="tab2" isInView={()=> setActiveTab(2)} />
           <Tab3 id="tab3" isInView={()=> setActiveTab(3)} />
           <Tab4 id="tab4" isInView={()=> setActiveTab(4)} />
+          <Tab5 id="tab5" isInView={()=> setActiveTab(5)} />
         </div>
       </Container>
     </Section>
