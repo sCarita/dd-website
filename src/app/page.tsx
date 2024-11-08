@@ -47,11 +47,9 @@ export default function Home() {
             </h3>
 
             <p className="text-xl font-light">
-              Our team connects skills that are usually compartmentasslized: data prototyping, 
-              complex information design, processing of large datasets, creative coding, data journalism, 
-              distributed system.
+              We are channeling our resources into developing our own in-house products.
             </p>
-            <p className="text-xl font-light mt-6">We will share details and blog posts soon enough...</p>
+            <p className="text-xl font-light mt-6">More information and insights about our upcoming projects will be available shortly — stay connected with us.</p>
             
             <Image src="/dd_eye.png" alt="Diffusion Dynamics eye" width={80} height={80} className="m-auto mt-10"/>
           </div>

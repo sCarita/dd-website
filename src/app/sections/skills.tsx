@@ -28,26 +28,21 @@ const Tab0 = ({ id, isInView }: { id: string; isInView: () => void }) => {
       </p>
       <div className="flex flex-col sm:flex-row justify-between gap-6 mt-14">
         <div className="basis-6/12">
-          <h4 className="text-xl">YOUR CHALLENGES</h4>
-          <ul className="list-disc text-lg font-light">
-            <li>Need accurate predictive models for business decision making.</li>
-            <li>Handling large and complex datasets effectively, daily and continuously.</li>
-            <li>Detecting patterns and anomalies in critical parts of your business.</li>
+          <h4 className="text-xl pb-4">YOUR CHALLENGES</h4>
+          <ul className="list-disc text-md text-gray-300 font-light">
+            <li className="pb-2">Need accurate predictive models for business decision making.</li>
+            <li className="pb-2">Handling large and complex datasets effectively, daily and continuously.</li>
+            <li className="pb-2">Detecting patterns and anomalies in critical parts of your business.</li>
           </ul>
         </div>
         <div className="basis-5/12">
-          <h4 className="text-xl">OUR EXPERTISE</h4>
-          <ul className="list-disc text-lg font-light">
-            <li>
-              Developed LLM-based systems with dimensionality reduction for skill
-              categorization.
-            </li>
-            <li>Time series analysis for industrial anomaly detection.</li>
-            <li>Churn prediction systems for telecommunications.</li>
-            <li>Debt collection likelihood modeling.</li>
-            <li>
-              Proven success in international data science competitions (Kaggle)
-            </li>
+          <h4 className="text-xl pb-4">OUR EXPERTISE</h4>
+          <ul className="list-disc text-md text-gray-300 font-light">
+            <li className="pb-2">Developed LLM-based systems with dimensionality reduction for skill categorization.</li>
+            <li className="pb-2">Time series analysis for industrial anomaly detection.</li>
+            <li className="pb-2">Churn prediction systems for telecommunications.</li>
+            <li className="pb-2">Debt collection likelihood modeling.</li>
+            <li className="pb-2">Proven success in international data science competitions (Kaggle)</li>
           </ul>
         </div>
       </div>
@@ -104,23 +99,23 @@ const Tab1 = ({ id, isInView }: { id: string; isInView: () => void }) => {
       </p>
       <div className="flex flex-col sm:flex-row justify-between gap-6 mt-14">
         <div className="basis-6/12">
-          <h4 className="text-xl">YOUR CHALLENGES</h4>
-          <ul className="list-disc text-lg font-light">
-            <li>Need robust and scalable web and mobile applications.</li>
-            <li>Integrating secure payment systems, including crypto payments.</li>
-            <li>Enhancing user engagement with real-time features and push notifications.</li>
-            <li>Analyzing user behavior to optimize application funnels.</li>
+          <h4 className="text-xl pb-4">YOUR CHALLENGES</h4>
+          <ul className="list-disc text-md text-gray-300 font-light">
+            <li className="pb-2">Need robust and scalable web and mobile applications.</li>
+            <li className="pb-2">Integrating secure payment systems, including crypto payments.</li>
+            <li className="pb-2">Enhancing user engagement with real-time features and push notifications.</li>
+            <li className="pb-2">Analyzing user behavior to optimize application funnels.</li>
           </ul>
         </div>
         <div className="basis-5/12">
-          <h4 className="text-xl">OUR EXPERTISE</h4>
-          <ul className="list-disc text-lg font-light">
-            <li>Developed cross-platform apps for iOS, Android, and web.</li>
-            <li>Implemented web3 applications with crypto payment integration and smart contract interactions.</li>
-            <li>Unlocked push notifications, campaigns, and promo codes with friendly dashboards.</li>
-            <li>Programmed complex event tracking systems for user behavior analysis.</li>
-            <li>Integrated Chromecast and Apple AirPlay features.</li>
-            <li>Built real-time apps that react instantly to underlying data changes.</li>
+          <h4 className="text-xl pb-4">OUR EXPERTISE</h4>
+          <ul className="list-disc text-md text-gray-300 font-light">
+            <li className="pb-2">Developed cross-platform apps for iOS, Android, and web.</li>
+            <li className="pb-2">Implemented web3 applications with crypto payment integration and smart contract interactions.</li>
+            <li className="pb-2">Unlocked push notifications, campaigns, and promo codes with friendly dashboards.</li>
+            <li className="pb-2">Programmed complex event tracking systems for user behavior analysis.</li>
+            <li className="pb-2">Integrated Chromecast and Apple AirPlay features.</li>
+            <li className="pb-2">Built real-time apps that react instantly to underlying data changes.</li>
           </ul>
         </div>
       </div>
@@ -174,22 +169,22 @@ const Tab2 = ({ id, isInView }: { id: string; isInView: () => void }) => {
       </p>
       <div className="flex flex-col sm:flex-row justify-between gap-6 mt-14">
         <div className="basis-6/12">
-          <h4 className="text-xl">YOUR CHALLENGES</h4>
-          <ul className="list-disc text-lg font-light">
-            <li>Creating engaging audio experiences with customized voices.</li>
-            <li>Synchronizing audio and subtitles for accessibility.</li>
-            <li>Incorporating emotional tones and moods into speech output.</li>
-            <li>Adjusting timings when using custom voices.</li>
+          <h4 className="text-xl pb-4">YOUR CHALLENGES</h4>
+          <ul className="list-disc text-md text-gray-300 font-light">
+            <li className="pb-2">Creating engaging audio experiences with customized voices.</li>
+            <li className="pb-2">Synchronizing audio and subtitles for accessibility.</li>
+            <li className="pb-2">Incorporating emotional tones and moods into speech output.</li>
+            <li className="pb-2">Adjusting timings when using custom voices.</li>
           </ul>
         </div>
         <div className="basis-5/12">
-          <h4 className="text-xl">OUR EXPERTISE</h4>
-          <ul className="list-disc text-lg font-light">
-            <li>Development of custom male and female voice profiles.</li>
-            <li>Integration of mood and emotional tone into speech synthesis.</li>
-            <li>Advanced subtitle synchronization and correction.</li>
-            <li>Experience with voice cloning and text-to-speech technologies.</li>
-            <li>Dynamic timing adjustments for custom voices.</li>
+          <h4 className="text-xl pb-4">OUR EXPERTISE</h4>
+          <ul className="list-disc text-md text-gray-300 font-light">
+            <li className="pb-2">Development of custom male and female voice profiles.</li>
+            <li className="pb-2">Integration of mood and emotional tone into speech synthesis.</li>
+            <li className="pb-2">Advanced subtitle synchronization and correction.</li>
+            <li className="pb-2">Experience with voice cloning and text-to-speech technologies.</li>
+            <li className="pb-2">Dynamic timing adjustments for custom voices.</li>
           </ul>
         </div>
       </div>
@@ -215,23 +210,23 @@ const Tab3 = ({ id, isInView }: { id: string; isInView: () => void }) => {
       </p>
       <div className="flex flex-col sm:flex-row justify-between gap-6 mt-14">
         <div className="basis-6/12">
-          <h4 className="text-xl">YOUR CHALLENGES</h4>
-          <ul className="list-disc text-lg font-light">
-            <li>Need for high-quality, customized visual content.</li>
-            <li>Scaling AI image generation to meet production demands.</li>
-            <li>Implementing advanced AI vision solutions in production environments.</li>
-            <li>Optimizing performance across GPU based distributed systems.</li>
+          <h4 className="text-xl pb-4">YOUR CHALLENGES</h4>
+          <ul className="list-disc text-md text-gray-300 font-light">
+            <li className="pb-2">Need for high-quality, customized visual content.</li>
+            <li className="pb-2">Scaling AI image generation to meet production demands.</li>
+            <li className="pb-2">Implementing advanced AI vision solutions in production environments.</li>
+            <li className="pb-2">Optimizing performance across GPU based distributed systems.</li>
           </ul>
         </div>
         <div className="basis-5/12">
-          <h4 className="text-xl">OUR EXPERTISE</h4>
-          <ul className="list-disc text-lg font-light">
-            <li>Advanced workflows in ComfyUI using LoRAs for style modification and subject injection.</li>
-            <li>Fine-tuning models with Auto1111 and Kohya for Dreambooth customization.</li>
-            <li>Operating large-scale distributed systems with 150+ GPUs.</li>
-            <li>Production-ready environments on Linux with CUDA optimization.</li>
-            <li>Geo load balancing for worldwide deployment.</li>
-            <li>Experience in Kaggle competitions (e.g., lung cancer detection, seal counting in drone photos).</li>
+          <h4 className="text-xl pb-4">OUR EXPERTISE</h4>
+          <ul className="list-disc text-md text-gray-300 font-light">
+            <li className="pb-2">Advanced workflows in ComfyUI using LoRAs for style modification and subject injection.</li>
+            <li className="pb-2">Fine-tuning models with Auto1111 and Kohya for Dreambooth customization.</li>
+            <li className="pb-2">Operating large-scale distributed systems with 150+ GPUs.</li>
+            <li className="pb-2">Production-ready environments on Linux with CUDA optimization.</li>
+            <li className="pb-2">Geo load balancing for worldwide deployment.</li>
+            <li className="pb-2">Experience in Kaggle competitions (e.g., lung cancer detection, seal counting in drone photos).</li>
           </ul>
         </div>
       </div>
@@ -284,22 +279,22 @@ const Tab4 = ({ id, isInView }: { id: string; isInView: () => void }) => {
       </p>
       <div className="flex flex-col sm:flex-row justify-between gap-6 mt-14">
         <div className="basis-6/12">
-          <h4 className="text-xl">YOUR CHALLENGES</h4>
-          <ul className="list-disc text-lg font-light">
-            <li>Generating high-quality, domain-specific content efficiently.</li>
-            <li>Implementing advanced AI text solutions tailored to your needs.</li>
-            <li>Integrating AI chat systems for enhanced user interaction.</li>
-            <li>Deploying self-hosted AI models for data privacy and control.</li>
+          <h4 className="text-xl pb-4">YOUR CHALLENGES</h4>
+          <ul className="list-disc text-md text-gray-300 font-light">
+            <li className="pb-2">Generating high-quality, domain-specific content efficiently.</li>
+            <li className="pb-2">Implementing advanced AI text solutions tailored to your needs.</li>
+            <li className="pb-2">Integrating AI chat systems for enhanced user interaction.</li>
+            <li className="pb-2">Deploying self-hosted AI models for data privacy and control.</li>
           </ul>
         </div>
         <div className="basis-5/12">
-          <h4 className="text-xl">OUR EXPERTISE</h4>
-          <ul className="list-disc text-lg font-light">
-            <li>Development of multi-step LLM-enhanced content generation systems.</li>
-            <li>Experience with chat and embedding-based RAG systems.</li>
-            <li>Creating AI-generated content for financial news and scientific materials.</li>
-            <li>Designing character impersonation models for interactive applications.</li>
-            <li>Deploying both third-party and self-hosted AI solutions.</li>
+          <h4 className="text-xl pb-4">OUR EXPERTISE</h4>
+          <ul className="list-disc text-md text-gray-300 font-light">
+            <li className="pb-2">Development of multi-step LLM-enhanced content generation systems.</li>
+            <li className="pb-2">Experience with chat and embedding-based RAG systems.</li>
+            <li className="pb-2">Creating AI-generated content for financial news and scientific materials.</li>
+            <li className="pb-2">Designing character impersonation models for interactive applications.</li>
+            <li className="pb-2">Deploying both third-party and self-hosted AI solutions.</li>
           </ul>
         </div>
       </div>
@@ -327,23 +322,23 @@ const Tab5 = ({ id, isInView }: { id: string; isInView: () => void }) => {
       </p>
       <div className="flex flex-col sm:flex-row justify-between gap-6 mt-14">
         <div className="basis-6/12">
-          <h4 className="text-xl">YOUR CHALLENGES</h4>
-          <ul className="list-disc text-lg font-light">
-            <li>Visualizing complex financial data intuitively.</li>
-            <li>Requiring real-time, interactive charts and dashboards.</li>
-            <li>Handling large datasets with high performance.</li>
-            <li>Providing multi-granularity views for diverse user needs.</li>
+          <h4 className="text-xl pb-4">YOUR CHALLENGES</h4>
+          <ul className="list-disc text-md text-gray-300 font-light">
+            <li className="pb-2">Visualizing complex financial data intuitively.</li>
+            <li className="pb-2">Requiring real-time, interactive charts and dashboards.</li>
+            <li className="pb-2">Handling large datasets with high performance.</li>
+            <li className="pb-2">Providing multi-granularity views for diverse user needs.</li>
           </ul>
         </div>
         <div className="basis-5/12">
-          <h4 className="text-xl">OUR EXPERTISE</h4>
-          <ul className="list-disc text-lg font-light">
-            <li>Developed advanced heatmaps with candlestick overlays.</li>
-            <li>Built live order book histograms for trading platforms.</li>
-            <li>Created interactive calendars and timelines.</li>
-            <li>Implemented geo-data visualizations for spatial analysis.</li>
-            <li>Optimized performance for large-scale data visualization.</li>
-            <li>Provided multi-granularity and customizable interfaces.</li>
+          <h4 className="text-xl pb-4">OUR EXPERTISE</h4>
+          <ul className="list-disc text-md text-gray-300 font-light">
+            <li className="pb-2">Developed advanced heatmaps with candlestick overlays.</li>
+            <li className="pb-2">Built live order book histograms for trading platforms.</li>
+            <li className="pb-2">Created interactive calendars and timelines.</li>
+            <li className="pb-2">Implemented geo-data visualizations for spatial analysis.</li>
+            <li className="pb-2">Optimized performance for large-scale data visualization.</li>
+            <li className="pb-2">Provided multi-granularity and customizable interfaces.</li>
           </ul>
         </div>
       </div>
