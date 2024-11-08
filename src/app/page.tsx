@@ -63,7 +63,7 @@ export default function Home() {
         <Container>
           <div className="flex flex-col flex-1 items-start">
               <Image src="/dd_logo.svg" alt="Logo" width={180} height={80} className="mb-14 invert dark:invert-0"/>
-              <Button>Schedule a Call</Button>
+              <Button>Schedule a Call <span className="text-2xl pl-4">☎️</span></Button>
           </div>
           <div className="flex flex-col justify-start items-start">
             <h4 className="text-3xl font-bold mb-8 font-recoleta">Our Company</h4>

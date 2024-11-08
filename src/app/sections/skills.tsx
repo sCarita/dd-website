@@ -254,7 +254,7 @@ const Tab3 = ({ id, isInView }: { id: string; isInView: () => void }) => {
               </p>
             </div>
             <div className="flex gap-2">
-            <Image src="/reactIcon.svg" alt="react" width={20} height={20} className="invert dark:invert-0"/>
+              <Image src="/reactIcon.svg" alt="react" width={20} height={20} className="invert dark:invert-0"/>
               <Image src="/gptIcon.svg" alt="gtp" width={20} height={20} className="invert dark:invert-0"/>
               <Image src="/typescriptIcon.svg" alt="typescript" width={20} height={20} className="invert dark:invert-0"/>
             </div>
@@ -329,21 +329,21 @@ const Tab5 = ({ id, isInView }: { id: string; isInView: () => void }) => {
         <div className="basis-6/12">
           <h4 className="text-xl">YOUR CHALLENGES</h4>
           <ul className="list-disc text-lg font-light">
-            <li>Visualizing complex financial data intuitively</li>
-            <li>Requiring real-time, interactive charts and dashboards</li>
-            <li>Handling large datasets with high performance</li>
-            <li>Providing multi-granularity views for diverse user needs</li>
+            <li>Visualizing complex financial data intuitively.</li>
+            <li>Requiring real-time, interactive charts and dashboards.</li>
+            <li>Handling large datasets with high performance.</li>
+            <li>Providing multi-granularity views for diverse user needs.</li>
           </ul>
         </div>
         <div className="basis-5/12">
           <h4 className="text-xl">OUR EXPERTISE</h4>
           <ul className="list-disc text-lg font-light">
-            <li>Developed advanced heatmaps with candlestick overlays</li>
-            <li>Built live order book histograms for trading platforms</li>
-            <li>Created interactive calendars and timelines</li>
-            <li>Implemented geo-data visualizations for spatial analysis</li>
-            <li>Optimized performance for large-scale data visualization</li>
-            <li>Provided multi-granularity and customizable interfaces</li>
+            <li>Developed advanced heatmaps with candlestick overlays.</li>
+            <li>Built live order book histograms for trading platforms.</li>
+            <li>Created interactive calendars and timelines.</li>
+            <li>Implemented geo-data visualizations for spatial analysis.</li>
+            <li>Optimized performance for large-scale data visualization.</li>
+            <li>Provided multi-granularity and customizable interfaces.</li>
           </ul>
         </div>
       </div>
@@ -366,27 +366,9 @@ const Tab5 = ({ id, isInView }: { id: string; isInView: () => void }) => {
               </p>
             </div>
             <div className="flex gap-2">
-              <Image
-                src="/d3Icon.svg"
-                alt="D3.js"
-                width={20}
-                height={20}
-                className="invert dark:invert-0"
-              />
-              <Image
-                src="/javascriptIcon.svg"
-                alt="JavaScript"
-                width={20}
-                height={20}
-                className="invert dark:invert-0"
-              />
-              <Image
-                src="/reactIcon.svg"
-                alt="React"
-                width={20}
-                height={20}
-                className="invert dark:invert-0"
-              />
+            <Image src="/reactIcon.svg" alt="react" width={20} height={20} className="invert dark:invert-0"/>
+              <Image src="/gptIcon.svg" alt="gtp" width={20} height={20} className="invert dark:invert-0"/>
+              <Image src="/typescriptIcon.svg" alt="typescript" width={20} height={20} className="invert dark:invert-0"/>
             </div>
           </div>
         </div>
