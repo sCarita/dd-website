@@ -206,7 +206,7 @@ const Tab3 = ({ id, isInView }: { id: string; isInView: () => void }) => {
     <div ref={ref} id={id} className="font-favorit mt-20">
       <h3 className="text-4xl font-recoleta font-bold mb-6">AI Vision & Image Generation</h3>
       <p className="text-xl font-light">
-        We have harnessed advanced AI vision technologies to create customizable scenes for children's stories, utilizing workflows in <span className="font-recoleta font-bold">ComfyUI</span> to perform face swaps and apply animated styles to generated images. Our expertise extends to generating themed backgrounds and executing large-scale production with over 150+ GPUs, including L40 and RTX 4090, in a distributed system managed through worldwide geo load balancing.
+        We have harnessed advanced AI vision technologies to create customizable scenes for children&apos;s stories, utilizing workflows in <span className="font-recoleta font-bold">ComfyUI</span> to perform face swaps and apply animated styles to generated images. Our expertise extends to generating themed backgrounds and executing large-scale production with over 150+ GPUs, including L40 and RTX 4090, in a distributed system managed through worldwide geo load balancing.
       </p>
       <div className="flex flex-col sm:flex-row justify-between gap-6 mt-14">
         <div className="basis-6/12">
@@ -243,9 +243,9 @@ const Tab3 = ({ id, isInView }: { id: string; isInView: () => void }) => {
           />
           <div className="flex flex-col flex-1 justify-between p-2 bg-zinc-200 dark:bg-zinc-900">
             <div>
-              <p className="text-sm">AI VISION / CHILDREN'S STORY SCENE GENERATION</p>
+              <p className="text-sm">AI VISION / CHILDREN&apos;S STORY SCENE GENERATION</p>
               <p className="text-lg mt-1">
-                Deployed complex ComfyUI workflows at scale, utilizing over 150 GPUs to generate customizable scenes with dynamic face swaps and animated styles for children's stories.
+                Deployed complex ComfyUI workflows at scale, utilizing over 150 GPUs to generate customizable scenes with dynamic face swaps and animated styles for children&apos;s stories.
               </p>
             </div>
             <div className="flex gap-2">

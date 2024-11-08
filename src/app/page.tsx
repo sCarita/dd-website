@@ -25,7 +25,7 @@ export default function Home() {
             <br /><br />
             </h2>
             <h2 className="text-3xl font-favorit font-thin">
-            We deliver <span className="font-recoleta font-bold text-green-300">Applications</span> that embody your company's vision, transforming ambitious ideas into impactful realities.
+            We deliver <span className="font-recoleta font-bold text-green-300">Applications</span> that embody your company&apos;s vision, transforming ambitious ideas into impactful realities.
             </h2>
           </div>
 
