@@ -21,27 +21,27 @@ const nav = [
     category: 'data'
   },
   {
-    src: 'tech/box3d-three-points.svg',
+    src: 'tech/Devops.svg',
     label: 'devops',
     category: 'devops'
   },
   {
-    src: 'tech/box3d-three-points.svg',
+    src: 'tech/AI Vision.svg',
     label: '_ai vision',
     category: 'ai_vision'
   },
   {
-    src: 'tech/box3d-three-points.svg',
+    src: 'tech/AI LLMs.svg',
     label: '_ai text',
     category: 'ai_text'
   },
   {
-    src: 'tech/box3d-three-points.svg',
+    src: 'tech/DATA VIZ.svg',
     label: 'apps',
     category: 'apps'
   },
   {
-    src: 'tech/box3d-three-points.svg',
+    src: 'tech/APPS.svg',
     label: 'data_viz',
     category: 'data viz'
   }
@@ -50,258 +50,288 @@ const nav = [
 const imagesRight = [
   //row1
   {
-    src: 'tech/box3d-three-points.svg',
+    src: 'tech/data-viz/HIGHCHARTS.svg',
     row: 'row-start-1',
     col: 'col-start-2',
-    y: 'translate-y-2',
-    x: '-translate-x-[50%]',
-    categories: ['ai_native']
+    y: '',
+    x: '-translate-x-[80%]',
+    scale: '',
+    categories: ['data viz']
   },
   {
-    src: 'tech/bridge-surface.svg',
+    src: 'tech/data-viz/TRADINGVIEW.svg',
     row: 'row-start-1',
     col: 'col-start-3',
     y: '',
     x: '-translate-x-[50%]',
-    categories: ['ai_native']
+    scale: '',
+    categories: ['data viz']
   },
   //row2
   {
-    src: 'tech/curve-array.svg',
+    src: 'tech/apps/VUEJS.svg',
     row: 'row-start-2',
     col: '',
     y: 'translate-y-4',
     x: '-translate-x-1',
-    categories: ['ai_native']
+    scale: '',
+    categories: ['apps']
   },
   {
-    src: 'tech/fillet3d.svg',
+    src: 'tech/data-viz/ECHARTS.svg',
     row: 'row-start-2',
     col: '',
     y: 'translate-y-1.5',
     x: '-translate-x-1.5',
-    categories: ['ai_native']
+    scale: '',
+    categories: ['data viz']
   },
   {
-    src: 'tech/one-point-circle.svg',
+    src: 'tech/data-viz/D3.svg',
     row: 'row-start-2',
     col: '',
     y: '-translate-y-2',
     x: 'translate-x-1',
-    categories: ['ai_native']
+    scale: '',
+    categories: ['data viz']
   },
   //row3
   {
-    src: 'tech/pipe3d.svg',
+    src: 'tech/apps/TYPESCRIPT.svg',
     row: 'row-start-3',
     col: 'col-start-2',
-    y: 'translate-y-2',
-    x: '-translate-x-[50%]',
-    categories: ['ai_native']
+    y: 'translate-y-2.5',
+    x: '-translate-x-[70%]',
+    scale: '',
+    categories: ['apps']
   },
   {
-    src: 'tech/project-curve3d.svg',
+    src: 'tech/data-viz/CHART.JS.svg',
     row: 'row-start-3',
     col: 'col-start-3',
     y: '',
     x: '-translate-x-[50%]',
-    categories: ['ai_native']
+    scale: '',
+    categories: ['data viz']
   },
   //row4
   {
-    src: 'tech/project-curve3d.svg',
+    src: 'tech/apps/TAILWIND.svg',
     row: 'row-start-4',
     col: '',
     y: 'translate-y-4',
     x: 'translate-x-1',
-    categories: ['ai_native']
+    scale: '',
+    categories: ['apps']
   },
   {
-    src: 'tech/sigma-function.svg',
+    src: 'tech/apps/NODEJS.svg',
     row: 'row-start-4',
     col: '',
     y: 'translate-y-1.5',
     x: 'translate-x-1.5',
-    categories: ['ai_native']
+    scale: '',
+    categories: ['apps']
   },
   {
-    src: 'tech/spiral.svg',
+    src: 'tech/apps/EXPRESSJS.svg',
     row: 'row-start-4',
     col: '',
     y: 'translate-y-2',
     x: 'translate-x-1',
-    categories: ['ai_native']
+    scale: '',
+    categories: ['apps']
   },
   //row5
   {
-    src: 'gptIcon.svg',
+    src: 'tech/apps/EXPO.svg',
     row: 'row-start-5',
     col: 'col-start-2',
     y: 'translate-y-2',
     x: '-translate-x-[50%]',
-    categories: ['ai_native']
+    scale: '',
+    categories: ['apps']
   },
   {
-    src: 'tech/xray-view.svg',
+    src: 'tech/apps/IOS.svg',
     row: 'row-start-5',
     col: 'col-start-3',
     y: 'translate-y-1',
     x: '-translate-x-[30%]',
-    categories: ['ai_native']
+    scale: '',
+    categories: ['apps']
   },
   //row6
   {
-    src: 'typescriptIcon.svg',
+    src: 'tech/apps/REACT-NATIVE.svg',
     row: 'row-start-6',
     col: 'col-start-2',
     y: 'translate-y-3',
     x: '-translate-x-[60%]',
-    categories: ['ai_native']
+    scale: '',
+    categories: ['apps']
   },
   {
-    src: 'reactIcon.svg',
+    src: 'tech/apps/ANDROID.svg',
     row: 'row-start-6',
     col: 'col-start-3',
-    y: '',
-    x: '-translate-x-[60%]',
-    categories: ['ai_native']
+    y: 'translate-y-2',
+    x: '-translate-x-[50%]',
+    scale: '',
+    categories: ['apps']
   }
 ]
 
 const imagesLeft = [
   //row1
   {
-    src: 'tech/box3d-three-points.svg',
+    src: 'tech/ai/LLAMA3.svg',
     row: 'row-start-1',
     col: 'col-start-2',
     y: 'translate-y-2',
     x: '',
-    categories: ['ai_voice']
+    scale: '',
+    categories: ['ai_text']
   },
   //row2
   {
-    src: 'tech/curve-array.svg',
+    src: 'tech/ai/HUGGINGFACE.svg',
     row: 'row-start-2',
     col: 'col-start-1',
-    y: 'translate-y-4',
+    y: 'translate-y-2',
     x: 'translate-x-[50%]',
-    categories: ['ai_voice']
+    scale: '',
+    categories: ['ai_vision']
   },
   {
-    src: 'tech/fillet3d.svg',
+    src: 'tech/ai/ANTROPHIC.svg',
     row: 'row-start-2',
     col: 'col-start-3',
     y: 'translate-y-1.5',
     x: '-translate-x-[50%]',
-    categories: ['ai_voice']
+    scale: '',
+    categories: ['ai_text']
   },
   //row3
   {
-    src: 'tech/pipe3d.svg',
+    src: 'tech/ai/TENSORFLOW.svg',
     row: 'row-start-3',
     col: '',
     y: 'translate-y-2',
     x: '-translate-x-[50%]',
-    categories: ['ai_voice']
+    scale: '',
+    categories: ['ai_native']
   },
   {
-    src: 'tech/project-curve3d.svg',
+    src: 'tech/ai/GPT.svg',
     row: 'row-start-3',
     col: '',
-    y: '',
+    y: 'translate-y-2.5',
     x: '-translate-x-1',
-    categories: ['ai_voice']
+    scale: '',
+    categories: ['ai_text']
   },
   //row4
   {
-    src: 'tech/project-curve3d.svg',
+    src: 'tech/ai/PYTORCH.svg',
     row: 'row-start-4',
     col: '',
     y: 'translate-y-4',
     x: '-translate-x-[100%]',
-    categories: ['ai_voice']
+    scale: '',
+    categories: ['ai_native']
   },
   {
-    src: 'tech/sigma-function.svg',
+    src: 'tech/ai/STABILITYAI.svg',
     row: 'row-start-4',
     col: '',
     y: 'translate-y-1.5',
     x: '-translate-x-[50%]',
-    categories: ['ai_voice']
+    scale: 'scale-125',
+    categories: ['ai_vision']
   },
   {
-    src: 'tech/spiral.svg',
+    src: 'tech/ai/RUNPOD.svg',
     row: 'row-start-4',
     col: '',
     y: 'translate-y-2',
-    x: '',
-    categories: ['ai_voice']
+    x: '-translate-x-3',
+    scale: 'scale-150',
+    categories: ['ai_vision']
   },
   //row5
   {
-    src: 'gptIcon.svg',
+    src: 'tech/ai/KERAS.svg',
     row: 'row-start-5',
     col: '',
-    y: 'translate-y-4',
+    y: 'translate-y-5',
     x: '-translate-x-[50%]',
-    categories: ['ai_voice']
+    scale: 'scale-75',
+    categories: ['ai_native']
   },
   {
-    src: 'tech/xray-view.svg',
+    src: 'tech/ai/VOICECLONING.svg',
     row: 'row-start-5',
     col: '',
     y: 'translate-y-2',
-    x: '-translate-x-[50%]',
+    x: '-translate-x-[30%]',
+    scale: '',
     categories: ['ai_voice']
   },
   {
-    src: 'tech/xray-view.svg',
+    src: 'tech/ai/COMFYUI.svg',
     row: 'row-start-5',
     col: '',
     y: 'translate-y-3',
     x: 'translate-x-[30%]',
-    categories: ['ai_voice']
+    scale: '',
+    categories: ['ai_vision']
   },
   //row6
   {
-    src: 'gptIcon.svg',
+    src: 'tech/ai/REPLICATE.svg',
+    row: 'row-start-6',
+    col: '',
+    y: 'translate-y-4',
+    x: 'translate-x-[50%]',
+    scale: 'scale-75',
+    categories: ['ai_vision']
+  },
+  {
+    src: 'tech/ai/ELEVENLABS.svg',
     row: 'row-start-6',
     col: '',
     y: 'translate-y-3',
     x: 'translate-x-[50%]',
+    scale: 'scale-125',
     categories: ['ai_voice']
   },
   {
-    src: 'tech/xray-view.svg',
-    row: 'row-start-6',
-    col: '',
-    y: 'translate-y-1',
-    x: 'translate-x-[50%]',
-    categories: ['ai_voice']
-  },
-  {
-    src: 'tech/xray-view.svg',
+    src: 'tech/ai/LAMBDALABS.svg',
     row: 'row-start-6',
     col: '',
     y: 'translate-y-3',
     x: 'translate-x-[80%]',
-    categories: ['ai_voice']
+    scale: 'scale-125',
+    categories: ['ai_vision']
   },
   //row7
   {
-    src: 'typescriptIcon.svg',
+    src: 'tech/ai/SKLEARN.svg',
     row: 'row-start-7',
     col: 'col-start-2',
     y: 'translate-y-3',
     x: '-translate-x-[20%]',
-    categories: ['ai_voice']
+    scale: '',
+    categories: ['ai_native']
   },
   {
-    src: 'reactIcon.svg',
+    src: 'tech/ai/MURFAI.svg',
     row: 'row-start-7',
     col: 'col-start-3',
     y: 'translate-y-4',
     x: '-translate-x-[20%]',
+    scale: '',
     categories: ['ai_voice']
   }
 ]
@@ -309,139 +339,155 @@ const imagesLeft = [
 const imagesTop = [
   //row1
   {
-    src: 'tech/box3d-three-points.svg',
+    src: 'tech/data/SNOWFLAKE.svg',
     row: 'row-start-1',
     y: '',
     x: '',
-    categories: ['ai_text']
+    scale: '',
+    categories: ['data']
   },
   //row2
   {
-    src: 'tech/project-curve3d.svg',
+    src: 'tech/data/FIREBASE.svg',
     row: 'row-start-2',
     col: '',
     y: 'translate-y-2',
     x: '-translate-x-5',
-    categories: ['ai_text']
+    scale: '',
+    categories: ['data']
   },
   {
-    src: 'tech/sigma-function.svg',
+    src: 'tech/data/TIMESCALE.svg',
     row: 'row-start-2',
     col: '',
     y: 'translate-y-2',
     x: '-translate-x-5',
-    categories: ['ai_text']
+    scale: '',
+    categories: ['data']
   },
   {
-    src: 'tech/spiral.svg',
+    src: 'tech/data/GRAFANA.svg',
     row: 'row-start-2',
     col: '',
     y: 'translate-y-1.5',
     x: '-translate-x-5',
-    categories: ['ai_text']
+    scale: '',
+    categories: ['data']
   },
   //row3
   {
-    src: 'gptIcon.svg',
+    src: 'tech/data/POSTGRES.svg',
     row: 'row-start-3',
     col: '',
     y: 'translate-y-4',
     x: '',
-    categories: ['ai_text']
+    scale: '',
+    categories: ['data']
   },
   {
-    src: 'tech/xray-view.svg',
+    src: 'tech/data/REDIS.svg',
     row: 'row-start-3',
     col: '',
     y: 'translate-y-2',
     x: '',
-    categories: ['ai_text']
+    scale: '',
+    categories: ['data']
   },
   {
-    src: 'tech/xray-view.svg',
+    src: 'tech/data/RABBITMQ.svg',
     row: 'row-start-3',
     col: '',
     y: 'translate-y-1',
     x: 'translate-x-3',
-    categories: ['ai_text']
+    scale: '',
+    categories: ['data']
   }
 ]
 
 const imagesBottom = [
   //row1
   {
-    src: 'tech/project-curve3d.svg',
+    src: 'tech/devops/aws.svg',
     row: 'row-start-1',
     col: '',
     y: 'translate-y-2',
     x: '',
-    categories: ['ai_vision']
+    scale: '',
+    categories: ['devops']
   },
   {
-    src: 'tech/sigma-function.svg',
+    src: 'tech/devops/KUBERNETES.svg',
     row: 'row-start-1',
     col: '',
     y: '',
     x: '',
-    categories: ['ai_vision']
+    scale: '',
+    categories: ['devops']
   },
   {
-    src: 'tech/spiral.svg',
+    src: 'tech/devops/DOCKER.svg',
     row: 'row-start-1',
     col: '',
-    y: 'translate-y-1.5',
+    y: 'translate-y-1',
     x: '',
-    categories: ['ai_vision']
+    scale: '',
+    categories: ['devops']
   },
   //row2
   {
-    src: 'gptIcon.svg',
+    src: 'tech/devops/GCP.svg',
     row: 'row-start-2',
     col: '',
     y: 'translate-y-4',
     x: '',
-    categories: ['ai_vision']
+    scale: '',
+    categories: ['devops']
   },
   {
-    src: 'tech/xray-view.svg',
+    src: 'tech/devops/TERRAFORM.svg',
     row: 'row-start-2',
     col: '',
     y: 'translate-y-2',
     x: '',
-    categories: ['ai_vision']
+    scale: '',
+    categories: ['devops']
   },
   {
-    src: 'tech/xray-view.svg',
+    src: 'tech/devops/ANSIBLE.svg',
     row: 'row-start-2',
     col: '',
     y: 'translate-y-1',
     x: '',
-    categories: ['ai_vision']
+    scale: '',
+    categories: ['devops']
   },
   {
-    src: 'tech/xray-view.svg',
+    src: 'tech/devops/PUPPETEER.svg',
     row: 'row-start-2',
     col: '',
     y: 'translate-y-1',
     x: '',
-    categories: ['ai_vision']
+    scale: '',
+    categories: ['devops']
   },
   //row3
   {
-    src: 'gptIcon.svg',
+    src: 'tech/devops/MONIT.svg',
     row: 'row-start-3',
     col: 'col-start-3',
-    y: '',
+    y: 'translate-y-2',
     x: '-translate-x-4',
-    categories: ['ai_vision']
+    scale: '',
+    categories: ['devops']
   },
   {
-    src: 'tech/xray-view.svg',
+    src: 'tech/devops/TOR.svg',
     row: 'row-start-3',
     col: 'col-start-4',
     y: 'translate-y-2',
     x: '-translate-x-5',
-    categories: ['ai_vision']
+    scale: '',
+    categories: ['devops']
   }
 ]
 
@@ -506,17 +552,17 @@ export default function Hero() {
           </div>
 
           {/* SIDES */}
-          <div className="hidden md:grid absolute right-[-85%] top-[-35%] grid-cols-3 gap-x-3">
+          <div className="hidden md:grid absolute right-[-80%] top-[-35%] grid-cols-3 gap-x-3">
             {imagesRight.map((img, i) => (
               <div
-                className={`w-[45px] h-[45px] transform ${img.x} ${img.y} ${img.row} ${img.col}`}
+                className={`w-[40px] h-[40px] transform ${img.x} ${img.y} ${img.row} ${img.col} ${img.scale}`}
                 key={i}
               >
                 <Image
                   src={`/${img.src}`}
                   alt="Diffusion Dynamics"
-                  width={45}
-                  height={45}
+                  width={40}
+                  height={40}
                   className={`floating-image invert dark:invert-0`}
                   style={handleActiveCategoy(img.categories)}
                 />
@@ -524,17 +570,17 @@ export default function Hero() {
             ))}
           </div>
 
-          <div className="hidden md:grid absolute left-[-85%] bottom-[-40%] grid-cols-3 gap-x-3">
+          <div className="hidden md:grid absolute left-[-77%] bottom-[-40%] grid-cols-3 gap-x-3">
             {imagesLeft.map((img, i) => (
               <div
-                className={`w-[45px] h-[45px] transform ${img.x} ${img.y} ${img.row} ${img.col}`}
+                className={`w-[40px] h-[40px] transform ${img.x} ${img.y} ${img.row} ${img.col} ${img.scale}`}
                 key={i}
               >
                 <Image
                   src={`/${img.src}`}
                   alt="Diffusion Dynamics"
-                  width={45}
-                  height={45}
+                  width={40}
+                  height={40}
                   className={`floating-image invert dark:invert-0`}
                   style={handleActiveCategoy(img.categories)}
                 />
@@ -543,17 +589,17 @@ export default function Hero() {
           </div>
 
           {/* VERTICAL */}
-          <div className="hidden md:grid absolute top-[-60%] left-[-60%] ml-[50%] grid-cols-3 gap-x-3">
+          <div className="hidden md:grid absolute top-[-55%] left-[-60%] ml-[50%] grid-cols-3 gap-x-3">
             {imagesTop.map((img, i) => (
               <div
-                className={`w-[45px] h-[45px] transform ${img.x} ${img.y} ${img.row} ${img.col}`}
+                className={`w-[40px] h-[40px] transform ${img.x} ${img.y} ${img.row} ${img.col} ${img.scale}`}
                 key={i}
               >
                 <Image
                   src={`/${img.src}`}
                   alt="Diffusion Dynamics"
-                  width={45}
-                  height={45}
+                  width={40}
+                  height={40}
                   className={`floating-image invert dark:invert-0`}
                   style={handleActiveCategoy(img.categories)}
                 />
@@ -561,17 +607,17 @@ export default function Hero() {
             ))}
           </div>
 
-          <div className="hidden md:grid absolute bottom-[-50%] right-[-40%] grid-cols-4 gap-x-3">
+          <div className="hidden md:grid absolute bottom-[-45%] right-[-40%] grid-cols-4 gap-x-3">
             {imagesBottom.map((img, i) => (
               <div
-                className={`w-[45px] h-[45px] transform ${img.x} ${img.y} ${img.row} ${img.col}`}
+                className={`w-[40px] h-[40px] transform ${img.x} ${img.y} ${img.row} ${img.col} ${img.scale}`}
                 key={i}
               >
                 <Image
                   src={`/${img.src}`}
                   alt="Diffusion Dynamics"
-                  width={45}
-                  height={45}
+                  width={40}
+                  height={40}
                   className={`floating-image invert dark:invert-0`}
                   style={handleActiveCategoy(img.categories)}
                 />
