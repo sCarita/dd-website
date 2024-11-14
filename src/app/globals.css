@@ -11,3 +11,25 @@ html {
     text-wrap: balance;
   }
 }
+
+.nav-menu .nav-item-label {
+  transition: all 0.5s ease-in;
+  transform: translateX(150%);
+}
+
+.nav-menu:hover .nav-item-label {
+  transition: all 0.5s ease-out;
+  transform: translateX(0);
+}
+
+.floating-image {
+  transition: all 0.5s ease-in;
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+}
+
+.floating-image:hover {
+  transition: all 0.5s ease-out;
+  transform: scale(120%);
+}
