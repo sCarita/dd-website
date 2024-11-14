@@ -2,7 +2,7 @@ import Section from '../components/section'
 import Container from '../components/container'
 import Button from '../components/button'
 import Image from 'next/image'
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import TechBox from '../components/techBox'
 import { imagesRight, imagesLeft, imagesTop, imagesBottom } from '../components/tech'
 
@@ -50,6 +50,7 @@ const nav = [
 ]
 
 export default function Hero() {
+  const menuRef = useRef<HTMLDivElement>(null)
   const [activeCategory, setActiveCategory] = useState<string | undefined>()
 
   const handleActiveCategoy = (category: Array<string>) => {
@@ -70,11 +71,21 @@ export default function Hero() {
     return {}
   }
 
+  const handleClickOutside = (event: MouseEvent) => {
+    if (menuRef.current && !menuRef.current.contains(event.target as Node))
+      setActiveCategory(undefined)
+  }
+
+  useEffect(() => {
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => document.removeEventListener('mousedown', handleClickOutside)
+  }, [])
+
   return (
     <Section className="max-md:mb-0 max-md:pb-0">
       <Container className="relative">
         <div
-          onMouseLeave={() => setActiveCategory(undefined)}
+          ref={menuRef}
           className="nav-menu hidden lg:flex absolute right-0 top-12 flex-col gap-3 px-6 items-end font-basis text-lg font-light"
         >
           {nav.map((item, i) => (
@@ -84,7 +95,12 @@ export default function Hero() {
               style={isActiveCategoy(item.category)}
               onClick={() => setActiveCategory(item.category)}
             >
-              <span className="nav-item-label">{item.label}</span>
+              <span
+                className="nav-item-label"
+                style={{ transform: activeCategory ? 'translateX(0)' : '' }}
+              >
+                {item.label}
+              </span>
               <Image
                 src={`/${item.src}`}
                 alt="Diffusion Dynamics"
