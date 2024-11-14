@@ -467,11 +467,11 @@ export default function Hero() {
   }
 
   return (
-    <Section>
+    <Section className="max-md:mb-0 max-md:pb-0">
       <Container className="relative">
         <div
           onMouseLeave={() => setActiveCategory(undefined)}
-          className="nav-menu absolute right-0 top-12 flex flex-col gap-3 items-end font-basis text-lg font-light"
+          className="nav-menu hidden lg:flex absolute right-0 top-12 flex-col gap-3 items-end font-basis text-lg font-light"
         >
           {nav.map((item, i) => (
             <div
@@ -492,7 +492,7 @@ export default function Hero() {
           ))}
         </div>
 
-        <div className="flex justify-center items-center h-[250px] mt-32 mb-24 relative m-auto">
+        <div className="flex justify-center items-center relative m-auto md:h-[250px] md:mt-32 md:mb-24">
           <div className="flex flex-col justify-center items-center gap-2">
             <Image
               src="/dd_logo.svg"
@@ -506,7 +506,7 @@ export default function Hero() {
           </div>
 
           {/* SIDES */}
-          <div className="absolute right-[-85%] top-[-35%] grid grid-cols-3 gap-x-3">
+          <div className="hidden md:grid absolute right-[-85%] top-[-35%] grid-cols-3 gap-x-3">
             {imagesRight.map((img, i) => (
               <div
                 className={`w-[45px] h-[45px] transform ${img.x} ${img.y} ${img.row} ${img.col}`}
@@ -524,7 +524,7 @@ export default function Hero() {
             ))}
           </div>
 
-          <div className="absolute left-[-85%] bottom-[-40%] grid grid-cols-3 gap-x-3">
+          <div className="hidden md:grid absolute left-[-85%] bottom-[-40%] grid-cols-3 gap-x-3">
             {imagesLeft.map((img, i) => (
               <div
                 className={`w-[45px] h-[45px] transform ${img.x} ${img.y} ${img.row} ${img.col}`}
@@ -543,7 +543,7 @@ export default function Hero() {
           </div>
 
           {/* VERTICAL */}
-          <div className="absolute top-[-60%] left-[-60%] ml-[50%] grid grid-cols-3 gap-x-3">
+          <div className="hidden md:grid absolute top-[-60%] left-[-60%] ml-[50%] grid-cols-3 gap-x-3">
             {imagesTop.map((img, i) => (
               <div
                 className={`w-[45px] h-[45px] transform ${img.x} ${img.y} ${img.row} ${img.col}`}
@@ -561,7 +561,7 @@ export default function Hero() {
             ))}
           </div>
 
-          <div className="absolute bottom-[-50%] right-[-40%] grid grid-cols-4 gap-x-3">
+          <div className="hidden md:grid absolute bottom-[-50%] right-[-40%] grid-cols-4 gap-x-3">
             {imagesBottom.map((img, i) => (
               <div
                 className={`w-[45px] h-[45px] transform ${img.x} ${img.y} ${img.row} ${img.col}`}

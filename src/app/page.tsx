@@ -12,9 +12,8 @@ export default function Home() {
   return (
     <>
       <section className="fixed left-0 top-0 w-full py-4 z-10">
-        <Container className="justify-end">
+        <Container className="max-md:items-end md:justify-end">
           <div className="flex gap-4">
-            <Button className="bg-white dark:bg-black">Book a call</Button>
             <ThemeToggle />
           </div>
         </Container>

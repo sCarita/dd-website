@@ -33,3 +33,7 @@ html {
   transition: all 0.5s ease-out;
   transform: scale(120%);
 }
+
+.project-card {
+  @apply flex flex-col md:flex-row gap-2 font-light;
+}
