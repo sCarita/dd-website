@@ -15,13 +15,18 @@ export const imagesRight = [
       description:
         'Highcharts is a charting library that allows you to create interactive charts and graphs.',
       tech: [
-        <Image
-          key="Highcharts"
-          src="tech/data-viz/HIGHCHARTS.svg"
-          alt="Highcharts"
-          width={20}
-          height={20}
-        />
+        {
+          title: 'Highcharts',
+          image: (
+            <Image
+              key="Highcharts"
+              src="tech/data-viz/HIGHCHARTS.svg"
+              alt="Highcharts"
+              width={20}
+              height={20}
+            />
+          )
+        }
       ]
     }
   },
@@ -38,13 +43,18 @@ export const imagesRight = [
       description:
         'TradingView is a charting library that allows you to create interactive charts and graphs.',
       tech: [
-        <Image
-          key="TradingView"
-          src="tech/data-viz/TRADINGVIEW.svg"
-          alt="TradingView"
-          width={20}
-          height={20}
-        />
+        {
+          title: 'TradingView',
+          image: (
+            <Image
+              key="TradingView"
+              src="tech/data-viz/TRADINGVIEW.svg"
+              alt="TradingView"
+              width={20}
+              height={20}
+            />
+          )
+        }
       ]
     }
   },
@@ -60,7 +70,14 @@ export const imagesRight = [
     info: {
       title: 'Vue.js',
       description: 'Vue.js is a progressive JavaScript framework for building user interfaces.',
-      tech: [<Image key="Vue.js" src="tech/apps/VUEJS.svg" alt="Vue.js" width={20} height={20} />]
+      tech: [
+        {
+          title: 'Vue.js',
+          image: (
+            <Image key="Vue.js" src="tech/apps/VUEJS.svg" alt="Vue.js" width={20} height={20} />
+          )
+        }
+      ]
     }
   },
   {
@@ -76,7 +93,18 @@ export const imagesRight = [
       description:
         'ECharts is a charting library that allows you to create interactive charts and graphs.',
       tech: [
-        <Image key="ECharts" src="tech/data-viz/ECHARTS.svg" alt="ECharts" width={20} height={20} />
+        {
+          title: 'ECharts',
+          image: (
+            <Image
+              key="ECharts"
+              src="tech/data-viz/ECHARTS.svg"
+              alt="ECharts"
+              width={20}
+              height={20}
+            />
+          )
+        }
       ]
     }
   },
@@ -92,7 +120,12 @@ export const imagesRight = [
       title: 'D3',
       description:
         'D3 is a charting library that allows you to create interactive charts and graphs.',
-      tech: [<Image key="D3" src="tech/data-viz/D3.svg" alt="D3" width={20} height={20} />]
+      tech: [
+        {
+          title: 'D3',
+          image: <Image key="D3" src="tech/data-viz/D3.svg" alt="D3" width={20} height={20} />
+        }
+      ]
     }
   },
   //row3
@@ -109,13 +142,18 @@ export const imagesRight = [
       description:
         'TypeScript is a programming language that allows you to create interactive charts and graphs.',
       tech: [
-        <Image
-          key="TypeScript"
-          src="tech/apps/TYPESCRIPT.svg"
-          alt="TypeScript"
-          width={20}
-          height={20}
-        />
+        {
+          title: 'TypeScript',
+          image: (
+            <Image
+              key="TypeScript"
+              src="tech/apps/TYPESCRIPT.svg"
+              alt="TypeScript"
+              width={20}
+              height={20}
+            />
+          )
+        }
       ]
     }
   },
@@ -132,13 +170,18 @@ export const imagesRight = [
       description:
         'Chart.js is a charting library that allows you to create interactive charts and graphs.',
       tech: [
-        <Image
-          key="Chart.js"
-          src="tech/data-viz/CHART.JS.svg"
-          alt="Chart.js"
-          width={20}
-          height={20}
-        />
+        {
+          title: 'Chart.js',
+          image: (
+            <Image
+              key="Chart.js"
+              src="tech/data-viz/CHART.JS.svg"
+              alt="Chart.js"
+              width={20}
+              height={20}
+            />
+          )
+        }
       ]
     }
   },
@@ -156,7 +199,18 @@ export const imagesRight = [
       description:
         'Tailwind is a CSS framework that allows you to create interactive charts and graphs.',
       tech: [
-        <Image key="Tailwind" src="tech/apps/TAILWIND.svg" alt="Tailwind" width={20} height={20} />
+        {
+          title: 'Tailwind',
+          image: (
+            <Image
+              key="Tailwind"
+              src="tech/apps/TAILWIND.svg"
+              alt="Tailwind"
+              width={20}
+              height={20}
+            />
+          )
+        }
       ]
     }
   },
@@ -173,7 +227,12 @@ export const imagesRight = [
       description:
         'Node.js is a JavaScript runtime that allows you to create interactive charts and graphs.',
       tech: [
-        <Image key="Node.js" src="tech/apps/NODEJS.svg" alt="Node.js" width={20} height={20} />
+        {
+          title: 'Node.js',
+          image: (
+            <Image key="Node.js" src="tech/apps/NODEJS.svg" alt="Node.js" width={20} height={20} />
+          )
+        }
       ]
     }
   },
@@ -190,13 +249,18 @@ export const imagesRight = [
       description:
         'Express.js is a web application framework that allows you to create interactive charts and graphs.',
       tech: [
-        <Image
-          key="Express.js"
-          src="tech/apps/EXPRESSJS.svg"
-          alt="Express.js"
-          width={20}
-          height={20}
-        />
+        {
+          title: 'Express.js',
+          image: (
+            <Image
+              key="Express.js"
+              src="tech/apps/EXPRESSJS.svg"
+              alt="Express.js"
+              width={20}
+              height={20}
+            />
+          )
+        }
       ]
     }
   },
@@ -212,7 +276,12 @@ export const imagesRight = [
     info: {
       title: 'Expo',
       description: 'Expo is a framework that allows you to create interactive charts and graphs.',
-      tech: [<Image key="Expo" src="tech/apps/EXPO.svg" alt="Expo" width={20} height={20} />]
+      tech: [
+        {
+          title: 'Expo',
+          image: <Image key="Expo" src="tech/apps/EXPO.svg" alt="Expo" width={20} height={20} />
+        }
+      ]
     }
   },
   {
@@ -227,7 +296,12 @@ export const imagesRight = [
       title: 'iOS',
       description:
         'iOS is a mobile operating system that allows you to create interactive charts and graphs.',
-      tech: [<Image key="iOS" src="tech/apps/IOS.svg" alt="iOS" width={20} height={20} />]
+      tech: [
+        {
+          title: 'iOS',
+          image: <Image key="iOS" src="tech/apps/IOS.svg" alt="iOS" width={20} height={20} />
+        }
+      ]
     }
   },
   //row6
@@ -244,13 +318,18 @@ export const imagesRight = [
       description:
         'React Native is a framework that allows you to create interactive charts and graphs.',
       tech: [
-        <Image
-          key="React Native"
-          src="tech/apps/REACT-NATIVE.svg"
-          alt="React Native"
-          width={20}
-          height={20}
-        />
+        {
+          title: 'React Native',
+          image: (
+            <Image
+              key="React Native"
+              src="tech/apps/REACT-NATIVE.svg"
+              alt="React Native"
+              width={20}
+              height={20}
+            />
+          )
+        }
       ]
     }
   },
@@ -267,7 +346,12 @@ export const imagesRight = [
       description:
         'Android is a mobile operating system that allows you to create interactive charts and graphs.',
       tech: [
-        <Image key="Android" src="tech/apps/ANDROID.svg" alt="Android" width={20} height={20} />
+        {
+          title: 'Android',
+          image: (
+            <Image key="Android" src="tech/apps/ANDROID.svg" alt="Android" width={20} height={20} />
+          )
+        }
       ]
     }
   }
@@ -287,7 +371,12 @@ export const imagesLeft = [
       title: 'LLama3',
       description:
         'LLama3 is a language model that allows you to create interactive charts and graphs.',
-      tech: [<Image key="LLama3" src="tech/ai/LLAMA3.svg" alt="LLama3" width={20} height={20} />]
+      tech: [
+        {
+          title: 'LLama3',
+          image: <Image key="LLama3" src="tech/ai/LLAMA3.svg" alt="LLama3" width={20} height={20} />
+        }
+      ]
     }
   },
   //row2
@@ -304,13 +393,18 @@ export const imagesLeft = [
       description:
         'HuggingFace is a language model that allows you to create interactive charts and graphs.',
       tech: [
-        <Image
-          key="HuggingFace"
-          src="tech/ai/HUGGINGFACE.svg"
-          alt="HuggingFace"
-          width={20}
-          height={20}
-        />
+        {
+          title: 'HuggingFace',
+          image: (
+            <Image
+              key="HuggingFace"
+              src="tech/ai/HUGGINGFACE.svg"
+              alt="HuggingFace"
+              width={20}
+              height={20}
+            />
+          )
+        }
       ]
     }
   },
@@ -327,7 +421,18 @@ export const imagesLeft = [
       description:
         'Anthropic is a language model that allows you to create interactive charts and graphs.',
       tech: [
-        <Image key="Anthropic" src="tech/ai/ANTROPHIC.svg" alt="Anthropic" width={20} height={20} />
+        {
+          title: 'Anthropic',
+          image: (
+            <Image
+              key="Anthropic"
+              src="tech/ai/ANTROPHIC.svg"
+              alt="Anthropic"
+              width={20}
+              height={20}
+            />
+          )
+        }
       ]
     }
   },
@@ -345,13 +450,18 @@ export const imagesLeft = [
       description:
         'TensorFlow is a machine learning library that allows you to create interactive charts and graphs.',
       tech: [
-        <Image
-          key="TensorFlow"
-          src="tech/ai/TENSORFLOW.svg"
-          alt="TensorFlow"
-          width={20}
-          height={20}
-        />
+        {
+          title: 'TensorFlow',
+          image: (
+            <Image
+              key="TensorFlow"
+              src="tech/ai/TENSORFLOW.svg"
+              alt="TensorFlow"
+              width={20}
+              height={20}
+            />
+          )
+        }
       ]
     }
   },
@@ -367,7 +477,12 @@ export const imagesLeft = [
       title: 'GPT',
       description:
         'GPT is a language model that allows you to create interactive charts and graphs.',
-      tech: [<Image key="GPT" src="tech/ai/GPT.svg" alt="GPT" width={20} height={20} />]
+      tech: [
+        {
+          title: 'GPT',
+          image: <Image key="GPT" src="tech/ai/GPT.svg" alt="GPT" width={20} height={20} />
+        }
+      ]
     }
   },
   //row4
@@ -383,7 +498,14 @@ export const imagesLeft = [
       title: 'PyTorch',
       description:
         'PyTorch is a machine learning library that allows you to create interactive charts and graphs.',
-      tech: [<Image key="PyTorch" src="tech/ai/PYTORCH.svg" alt="PyTorch" width={20} height={20} />]
+      tech: [
+        {
+          title: 'PyTorch',
+          image: (
+            <Image key="PyTorch" src="tech/ai/PYTORCH.svg" alt="PyTorch" width={20} height={20} />
+          )
+        }
+      ]
     }
   },
   {
@@ -399,13 +521,18 @@ export const imagesLeft = [
       description:
         'StabilityAI is a machine learning library that allows you to create interactive charts and graphs.',
       tech: [
-        <Image
-          key="StabilityAI"
-          src="tech/ai/STABILITYAI.svg"
-          alt="StabilityAI"
-          width={20}
-          height={20}
-        />
+        {
+          title: 'StabilityAI',
+          image: (
+            <Image
+              key="StabilityAI"
+              src="tech/ai/STABILITYAI.svg"
+              alt="StabilityAI"
+              width={20}
+              height={20}
+            />
+          )
+        }
       ]
     }
   },
@@ -421,7 +548,12 @@ export const imagesLeft = [
       title: 'RunPod',
       description:
         'RunPod is a machine learning library that allows you to create interactive charts and graphs.',
-      tech: [<Image key="RunPod" src="tech/ai/RUNPOD.svg" alt="RunPod" width={20} height={20} />]
+      tech: [
+        {
+          title: 'RunPod',
+          image: <Image key="RunPod" src="tech/ai/RUNPOD.svg" alt="RunPod" width={20} height={20} />
+        }
+      ]
     }
   },
   //row5
@@ -437,7 +569,12 @@ export const imagesLeft = [
       title: 'Keras',
       description:
         'Keras is a machine learning library that allows you to create interactive charts and graphs.',
-      tech: [<Image key="Keras" src="tech/ai/KERAS.svg" alt="Keras" width={20} height={20} />]
+      tech: [
+        {
+          title: 'Keras',
+          image: <Image key="Keras" src="tech/ai/KERAS.svg" alt="Keras" width={20} height={20} />
+        }
+      ]
     }
   },
   {
@@ -453,13 +590,18 @@ export const imagesLeft = [
       description:
         'VoiceCloning is a voice model that allows you to create interactive charts and graphs.',
       tech: [
-        <Image
-          key="VoiceCloning"
-          src="tech/ai/VOICECLONING.svg"
-          alt="VoiceCloning"
-          width={20}
-          height={20}
-        />
+        {
+          title: 'VoiceCloning',
+          image: (
+            <Image
+              key="VoiceCloning"
+              src="tech/ai/VOICECLONING.svg"
+              alt="VoiceCloning"
+              width={20}
+              height={20}
+            />
+          )
+        }
       ]
     }
   },
@@ -475,7 +617,14 @@ export const imagesLeft = [
       title: 'ComfyUI',
       description:
         'ComfyUI is a UI for machine learning that allows you to create interactive charts and graphs.',
-      tech: [<Image key="ComfyUI" src="tech/ai/COMFYUI.svg" alt="ComfyUI" width={20} height={20} />]
+      tech: [
+        {
+          title: 'ComfyUI',
+          image: (
+            <Image key="ComfyUI" src="tech/ai/COMFYUI.svg" alt="ComfyUI" width={20} height={20} />
+          )
+        }
+      ]
     }
   },
   //row6
@@ -492,7 +641,18 @@ export const imagesLeft = [
       description:
         'Replicate is a machine learning library that allows you to create interactive charts and graphs.',
       tech: [
-        <Image key="Replicate" src="tech/ai/REPLICATE.svg" alt="Replicate" width={20} height={20} />
+        {
+          title: 'Replicate',
+          image: (
+            <Image
+              key="Replicate"
+              src="tech/ai/REPLICATE.svg"
+              alt="Replicate"
+              width={20}
+              height={20}
+            />
+          )
+        }
       ]
     }
   },
@@ -509,13 +669,18 @@ export const imagesLeft = [
       description:
         'ElevenLabs is a voice model that allows you to create interactive charts and graphs.',
       tech: [
-        <Image
-          key="ElevenLabs"
-          src="tech/ai/ELEVENLABS.svg"
-          alt="ElevenLabs"
-          width={20}
-          height={20}
-        />
+        {
+          title: 'ElevenLabs',
+          image: (
+            <Image
+              key="ElevenLabs"
+              src="tech/ai/ELEVENLABS.svg"
+              alt="ElevenLabs"
+              width={20}
+              height={20}
+            />
+          )
+        }
       ]
     }
   },
@@ -532,13 +697,18 @@ export const imagesLeft = [
       description:
         'LambdaLabs is a machine learning library that allows you to create interactive charts and graphs.',
       tech: [
-        <Image
-          key="LambdaLabs"
-          src="tech/ai/LAMBDALABS.svg"
-          alt="LambdaLabs"
-          width={20}
-          height={20}
-        />
+        {
+          title: 'LambdaLabs',
+          image: (
+            <Image
+              key="LambdaLabs"
+              src="tech/ai/LAMBDALABS.svg"
+              alt="LambdaLabs"
+              width={20}
+              height={20}
+            />
+          )
+        }
       ]
     }
   },
@@ -555,7 +725,14 @@ export const imagesLeft = [
       title: 'Sklearn',
       description:
         'Sklearn is a machine learning library that allows you to create interactive charts and graphs.',
-      tech: [<Image key="Sklearn" src="tech/ai/SKLEARN.svg" alt="Sklearn" width={20} height={20} />]
+      tech: [
+        {
+          title: 'Sklearn',
+          image: (
+            <Image key="Sklearn" src="tech/ai/SKLEARN.svg" alt="Sklearn" width={20} height={20} />
+          )
+        }
+      ]
     }
   },
   {
@@ -570,7 +747,12 @@ export const imagesLeft = [
       title: 'MurfAI',
       description:
         'MurfAI is a voice model that allows you to create interactive charts and graphs.',
-      tech: [<Image key="MurfAI" src="tech/ai/MURFAI.svg" alt="MurfAI" width={20} height={20} />]
+      tech: [
+        {
+          title: 'MurfAI',
+          image: <Image key="MurfAI" src="tech/ai/MURFAI.svg" alt="MurfAI" width={20} height={20} />
+        }
+      ]
     }
   }
 ]
@@ -589,13 +771,18 @@ export const imagesTop = [
       description:
         'Snowflake is a data warehouse that allows you to create interactive charts and graphs.',
       tech: [
-        <Image
-          key="Snowflake"
-          src="tech/data/SNOWFLAKE.svg"
-          alt="Snowflake"
-          width={20}
-          height={20}
-        />
+        {
+          title: 'Snowflake',
+          image: (
+            <Image
+              key="Snowflake"
+              src="tech/data/SNOWFLAKE.svg"
+              alt="Snowflake"
+              width={20}
+              height={20}
+            />
+          )
+        }
       ]
     }
   },
@@ -613,7 +800,18 @@ export const imagesTop = [
       description:
         'Firebase is a data warehouse that allows you to create interactive charts and graphs.',
       tech: [
-        <Image key="Firebase" src="tech/data/FIREBASE.svg" alt="Firebase" width={20} height={20} />
+        {
+          title: 'Firebase',
+          image: (
+            <Image
+              key="Firebase"
+              src="tech/data/FIREBASE.svg"
+              alt="Firebase"
+              width={20}
+              height={20}
+            />
+          )
+        }
       ]
     }
   },
@@ -630,13 +828,18 @@ export const imagesTop = [
       description:
         'Timescale is a data warehouse that allows you to create interactive charts and graphs.',
       tech: [
-        <Image
-          key="Timescale"
-          src="tech/data/TIMESCALE.svg"
-          alt="Timescale"
-          width={20}
-          height={20}
-        />
+        {
+          title: 'Timescale',
+          image: (
+            <Image
+              key="Timescale"
+              src="tech/data/TIMESCALE.svg"
+              alt="Timescale"
+              width={20}
+              height={20}
+            />
+          )
+        }
       ]
     }
   },
@@ -653,7 +856,12 @@ export const imagesTop = [
       description:
         'Grafana is a data visualization tool that allows you to create interactive charts and graphs.',
       tech: [
-        <Image key="Grafana" src="tech/data/GRAFANA.svg" alt="Grafana" width={20} height={20} />
+        {
+          title: 'Grafana',
+          image: (
+            <Image key="Grafana" src="tech/data/GRAFANA.svg" alt="Grafana" width={20} height={20} />
+          )
+        }
       ]
     }
   },
@@ -671,7 +879,18 @@ export const imagesTop = [
       description:
         'Postgres is a database that allows you to create interactive charts and graphs.',
       tech: [
-        <Image key="Postgres" src="tech/data/POSTGRES.svg" alt="Postgres" width={20} height={20} />
+        {
+          title: 'Postgres',
+          image: (
+            <Image
+              key="Postgres"
+              src="tech/data/POSTGRES.svg"
+              alt="Postgres"
+              width={20}
+              height={20}
+            />
+          )
+        }
       ]
     }
   },
@@ -686,7 +905,12 @@ export const imagesTop = [
     info: {
       title: 'Redis',
       description: 'Redis is a database that allows you to create interactive charts and graphs.',
-      tech: [<Image key="Redis" src="tech/data/REDIS.svg" alt="Redis" width={20} height={20} />]
+      tech: [
+        {
+          title: 'Redis',
+          image: <Image key="Redis" src="tech/data/REDIS.svg" alt="Redis" width={20} height={20} />
+        }
+      ]
     }
   },
   {
@@ -702,7 +926,18 @@ export const imagesTop = [
       description:
         'RabbitMQ is a message broker that allows you to create interactive charts and graphs.',
       tech: [
-        <Image key="RabbitMQ" src="tech/data/RABBITMQ.svg" alt="RabbitMQ" width={20} height={20} />
+        {
+          title: 'RabbitMQ',
+          image: (
+            <Image
+              key="RabbitMQ"
+              src="tech/data/RABBITMQ.svg"
+              alt="RabbitMQ"
+              width={20}
+              height={20}
+            />
+          )
+        }
       ]
     }
   }
@@ -722,7 +957,12 @@ export const imagesBottom = [
       title: 'AWS',
       description:
         'AWS is a cloud platform that allows you to create interactive charts and graphs.',
-      tech: [<Image key="AWS" src="tech/devops/AWS.svg" alt="AWS" width={20} height={20} />]
+      tech: [
+        {
+          title: 'AWS',
+          image: <Image key="AWS" src="tech/devops/AWS.svg" alt="AWS" width={20} height={20} />
+        }
+      ]
     }
   },
   {
@@ -738,13 +978,18 @@ export const imagesBottom = [
       description:
         'Kubernetes is a container orchestration platform that allows you to create interactive charts and graphs.',
       tech: [
-        <Image
-          key="Kubernetes"
-          src="tech/devops/KUBERNETES.svg"
-          alt="Kubernetes"
-          width={20}
-          height={20}
-        />
+        {
+          title: 'Kubernetes',
+          image: (
+            <Image
+              key="Kubernetes"
+              src="tech/devops/KUBERNETES.svg"
+              alt="Kubernetes"
+              width={20}
+              height={20}
+            />
+          )
+        }
       ]
     }
   },
@@ -761,7 +1006,12 @@ export const imagesBottom = [
       description:
         'Docker is a containerization platform that allows you to create interactive charts and graphs.',
       tech: [
-        <Image key="Docker" src="tech/devops/DOCKER.svg" alt="Docker" width={20} height={20} />
+        {
+          title: 'Docker',
+          image: (
+            <Image key="Docker" src="tech/devops/DOCKER.svg" alt="Docker" width={20} height={20} />
+          )
+        }
       ]
     }
   },
@@ -778,7 +1028,12 @@ export const imagesBottom = [
       title: 'GCP',
       description:
         'GCP is a cloud platform that allows you to create interactive charts and graphs.',
-      tech: [<Image key="GCP" src="tech/devops/GCP.svg" alt="GCP" width={20} height={20} />]
+      tech: [
+        {
+          title: 'GCP',
+          image: <Image key="GCP" src="tech/devops/GCP.svg" alt="GCP" width={20} height={20} />
+        }
+      ]
     }
   },
   {
@@ -793,13 +1048,18 @@ export const imagesBottom = [
       title: 'Terraform',
       description: 'Terraform is a tool that allows you to create interactive charts and graphs.',
       tech: [
-        <Image
-          key="Terraform"
-          src="tech/devops/TERRAFORM.svg"
-          alt="Terraform"
-          width={20}
-          height={20}
-        />
+        {
+          title: 'Terraform',
+          image: (
+            <Image
+              key="Terraform"
+              src="tech/devops/TERRAFORM.svg"
+              alt="Terraform"
+              width={20}
+              height={20}
+            />
+          )
+        }
       ]
     }
   },
@@ -815,7 +1075,18 @@ export const imagesBottom = [
       title: 'Ansible',
       description: 'Ansible is a tool that allows you to create interactive charts and graphs.',
       tech: [
-        <Image key="Ansible" src="tech/devops/ANSIBLE.svg" alt="Ansible" width={20} height={20} />
+        {
+          title: 'Ansible',
+          image: (
+            <Image
+              key="Ansible"
+              src="tech/devops/ANSIBLE.svg"
+              alt="Ansible"
+              width={20}
+              height={20}
+            />
+          )
+        }
       ]
     }
   },
@@ -831,13 +1102,18 @@ export const imagesBottom = [
       title: 'Puppeteer',
       description: 'Puppeteer is a tool that allows you to create interactive charts and graphs.',
       tech: [
-        <Image
-          key="Puppeteer"
-          src="tech/devops/PUPPETEER.svg"
-          alt="Puppeteer"
-          width={20}
-          height={20}
-        />
+        {
+          title: 'Puppeteer',
+          image: (
+            <Image
+              key="Puppeteer"
+              src="tech/devops/PUPPETEER.svg"
+              alt="Puppeteer"
+              width={20}
+              height={20}
+            />
+          )
+        }
       ]
     }
   },
@@ -853,7 +1129,14 @@ export const imagesBottom = [
     info: {
       title: 'Monit',
       description: 'Monit is a tool that allows you to create interactive charts and graphs.',
-      tech: [<Image key="Monit" src="tech/devops/MONIT.svg" alt="Monit" width={20} height={20} />]
+      tech: [
+        {
+          title: 'Monit',
+          image: (
+            <Image key="Monit" src="tech/devops/MONIT.svg" alt="Monit" width={20} height={20} />
+          )
+        }
+      ]
     }
   },
   {
@@ -867,7 +1150,12 @@ export const imagesBottom = [
     info: {
       title: 'Tor',
       description: 'Tor is a tool that allows you to create interactive charts and graphs.',
-      tech: [<Image key="Tor" src="tech/devops/TOR.svg" alt="Tor" width={20} height={20} />]
+      tech: [
+        {
+          title: 'Tor',
+          image: <Image key="Tor" src="tech/devops/TOR.svg" alt="Tor" width={20} height={20} />
+        }
+      ]
     }
   }
 ]

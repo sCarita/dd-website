@@ -4,7 +4,7 @@ import Button from '../components/button'
 import Image from 'next/image'
 import { useEffect, useRef, useState } from 'react'
 import TechBox from '../components/techBox'
-import { imagesRight, imagesLeft, imagesTop, imagesBottom } from '../components/tech'
+import { imagesRight, imagesLeft, imagesTop, imagesBottom } from '../utils/tech'
 
 const nav = [
   {
@@ -148,6 +148,7 @@ export default function Hero() {
                   className={`group-hover:flex hidden absolute top-10 left-10`}
                   title={img.info.title}
                   description={img.info.description}
+                  category={img.categories[0]}
                   tech={img.info.tech}
                 />
               </div>
@@ -176,6 +177,7 @@ export default function Hero() {
                   className={`group-hover:flex hidden absolute top-10 left-10`}
                   title={img.info.title}
                   description={img.info.description}
+                  category={img.categories[0]}
                   tech={img.info.tech}
                 />
               </div>
@@ -205,6 +207,7 @@ export default function Hero() {
                   className={`group-hover:flex hidden absolute top-10 left-10`}
                   title={img.info.title}
                   description={img.info.description}
+                  category={img.categories[0]}
                   tech={img.info.tech}
                 />
               </div>
@@ -233,6 +236,7 @@ export default function Hero() {
                   className={`group-hover:flex hidden absolute top-10 left-10`}
                   title={img.info.title}
                   description={img.info.description}
+                  category={img.categories[0]}
                   tech={img.info.tech}
                 />
               </div>
